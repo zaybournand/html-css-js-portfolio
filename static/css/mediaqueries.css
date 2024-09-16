@@ -1,0 +1,140 @@
+@media screen and (min-width: 1400px) {
+    #profile {
+        height: 70vh; /* Adjust height for larger screens */
+        margin-bottom: 4rem; /* Reduce the bottom margin */
+        display: flex;
+        align-items: center; /* Align profile image to the center vertically */
+    }
+    .about-container {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #experience,
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+    #profile,
+    .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section,
+    .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 1%;
+    }
+    .section__pic-container {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 2rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact,
+    footer {
+        height: auto;
+        padding: 1rem;
+    }
+    #profile {
+        height: auto;
+        margin-bottom: 0;
+    }
+    .section__pic-container {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contact-info-container {
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    .contact-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info-container p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .section__text__p2 {
+        font-size: 1rem;
+    }
+    .title {
+        font-size: 1rem;
+    }
+    .text-container {
+        text-align: justify;
+    }
+    .arrow {
+        display: none;
+    }
+
+    /* Adjustments to black box and position of profile and "Get to know more about" */
+    #black-box {
+        height: 85vh; /* Make the black box longer */
+    }
+    #get-to-know {
+        margin-top: 4rem; /* Lower the "Get to know more about" section */
+    }
+    #profile {
+        margin-top: -1rem; /* Slightly raise the profile section */
+    }
+}
