@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,8 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Portfolio</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaqueries.css') }}" />
+        <link rel="stylesheet" href="static/css/style.css" />
+        <link rel="stylesheet" href="static/css/mediaqueries.css" />
     </head>
     <body>
         <!-- Desktop Navigation -->
@@ -43,27 +45,27 @@
         <!-- Profile Section -->
         <section id="profile">
             <div class="section__pic-container">
-                <img src="{{ url_for('static', filename='assets/profile-pic.png') }}" alt="Zayne Bournand profile picture" />
+                <img src="static/assets/profile-pic.png" alt="Zayne Bournand profile picture" />
             </div>
             <div class="section__text">
                 <p class="section__text__p1">Hello, I'm</p>
                 <h1 class="title">Zayne Bournand</h1>
                 <p class="section__text__p2">Backend Developer</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('{{ url_for('static', filename='assets/resume.pdf') }}')">
+                    <button class="btn btn-color-2" onclick="window.open('static/assets/resume.pdf')">
                         Resume
                     </button>
                     
                 </div>
                 <div id="socials-container">
                     <img
-                        src="{{ url_for('static', filename='assets/linkedin.png') }}"
+                        src="static/assets/linkedin.png"
                         alt="LinkedIn profile"
                         class="icon"
                         onclick="location.href='https://www.linkedin.com/in/zayne-bournand-44982a31b/'"
                     />
                     <img
-                        src="{{ url_for('static', filename='assets/github.png') }}"
+                        src="static/assets/github.png"
                         alt="GitHub profile"
                         class="icon"
                         onclick="location.href='https://github.com/zaybournand?tab=repositories'"
@@ -79,7 +81,7 @@
             <div class="section-container">
                 <div class="section__pic-container">
                     <img
-                        src="{{ url_for('static', filename='assets/about-me-picture.jpg') }}"
+                        src="static/assets/about-me-picture.jpg"
                         alt="About me picture"
                         class="about-pic"
                     />
@@ -88,7 +90,7 @@
                     <div class="about-containers">
                         <div class="details-container">
                             <img
-                                src="{{ url_for('static', filename='assets/experience.png') }}"
+                                src="static/assets/experience.png"
                                 alt="Experience icon"
                                 class="icon"
                             />
@@ -97,7 +99,7 @@
                         </div>
                         <div class="details-container">
                             <img
-                                src="{{ url_for('static', filename='assets/education.png') }}"
+                                src="static/assets/education.png"
                                 alt="Education icon"
                                 class="icon"
                             />
@@ -115,7 +117,7 @@
                 </div>
             </div>
             <img
-                src="{{ url_for('static', filename='assets/arrow.png') }}"
+                src="static/assets/arrow.png"
                 alt="Arrow icon"
                 class="icon arrow"
                 onclick="location.href='#experience'"
@@ -133,7 +135,7 @@
                         <div class="article-container">
                             <article>
                                 <img
-                                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                                    src="static/assets/checkmark.png"
                                     alt="Experience icon"
                                     class="icon"
                                 />
@@ -144,7 +146,7 @@
                             </article>
                             <article>
                                 <img
-                                    src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                                    src="static/assets/checkmark.png"
                                     alt="Experience icon"
                                     class="icon"
                                 />
@@ -158,7 +160,7 @@
                 </div>
             </div>
             <img
-                src="{{ url_for('static', filename='assets/arrow.png') }}"
+                src="static/assets/arrow.png"
                 alt="Arrow icon"
                 class="icon arrow"
                 onclick="location.href='#projects'"
@@ -166,50 +168,47 @@
         </section>
 
         <!-- Projects Section -->
-<!-- Projects Section -->
-<!-- Projects Section -->
-<section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="projects-container">
-        <!-- First Project -->
-        <div class="project-card">
-            <img
-                src="{{ url_for('static', filename='assets/flappy.png') }}"
-                alt="Flappy Bird Game"
-                class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Flappy Bird Game</h2>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/flappy-bird-game'">
-                    GitHub
-                </button>
-            </div>
-        </div>
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="projects-container">
+                <!-- First Project -->
+                <div class="project-card">
+                    <img
+                        src="static/assets/flappy.png"
+                        alt="Flappy Bird Game"
+                        class="project-img"
+                    />
+                    <h2 class="experience-sub-title project-title">Flappy Bird Game</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/flappy-bird-game'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
 
-        <!-- Second Project -->
-        <div class="project-card">
-            <img
-                src="{{ url_for('static', filename='assets/maze.png') }}"
-                alt="Maze Game"
-                class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Maze Game</h2>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/maze-game'">
-                    GitHub
-                </button>
+                <!-- Second Project -->
+                <div class="project-card">
+                    <img
+                        src="static/assets/maze.png"
+                        alt="Maze Game"
+                        class="project-img"
+                    />
+                    <h2 class="experience-sub-title project-title">Maze Game</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/maze-game'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <img
-        src="{{ url_for('static', filename='assets/arrow.png') }}"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#contact'"
-    />
-</section>
-
+            <img
+                src="static/assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='#contact'"
+            />
+        </section>
 
         <!-- Contact Section -->
         <section id="contact">
@@ -217,11 +216,11 @@
             <h1 class="title">Contact Me</h1>
             <div class="contact-info-upper-container">
                 <div class="contact-info-container">
-                    <img src="{{ url_for('static', filename='assets/email.png') }}" alt="Email icon" class="icon contact-icon" />
+                    <img src="static/assets/email.png" alt="Email icon" class="icon contact-icon" />
                     <p><a href="mailto:zaybournand@gmail.com">zaybournand@gmail.com</a></p>
                 </div>
                 <div class="contact-info-container">
-                    <img src="{{ url_for('static', filename='assets/linkedin.png') }}" alt="LinkedIn icon" class="icon contact-icon" />
+                    <img src="static/assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
                     <p><a href="https://www.linkedin.com/in/zayne-bournand-44982a31b/">LinkedIn</a></p>
                 </div>
             </div>
@@ -242,6 +241,6 @@
             <p>Copyright &#169; 2024 Zayne Bournand. All Rights Reserved.</p>
         </footer>
         
-        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <script src="static/js/script.js"></script>
     </body>
-</html>
+
