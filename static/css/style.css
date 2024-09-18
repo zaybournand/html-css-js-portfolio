@@ -17,16 +17,16 @@ html {
 p {
     color: rgb(85, 85, 85);
 }
-
 /* TRANSITION */
+
 a, 
 .btn {
     transition: all 300ms ease;
 }
-
 /* DESKTOP NAV */
+
 nav,
-.nav-links {
+.nav-links{
     display: flex;
 }
 
@@ -34,6 +34,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 17vh;
+    
 }
 
 .nav-links {
@@ -57,6 +58,9 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
+}
+.logo{
+    font-size: 2rem;
 }
 
 .logo:hover {
@@ -129,25 +133,40 @@ a:hover {
     transform: rotate(-45deg) translate(10px, -5px);
 }
 
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+
 /* Section */
+
 section {
     padding-top: 4vh;
     height: 96vh;
-    margin: 0 10rem;
+    margin:0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
 
-.section-container {
+.section-container{
     display: flex;
 }
 
-/* PROFILE SECTION */
-#profile {
+/* PROFILE SECTION*/
+
+#profile{
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 80vh
 }
 
 .section__pic-container {
@@ -163,16 +182,15 @@ section {
     align-items: center; /* Center the content horizontally */
     text-align: center;  /* Ensure text alignment is centered */
 }
-
 .section_text_p {
     font-weight: 600;
 }
 
-.section__text__p1 {
+.section__text__p1{
     text-align: center;
 }
 
-.section__text__p2 {
+.section__text__p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
@@ -190,17 +208,18 @@ section {
 }
 
 /* ICONS */
+
 .icon {
     cursor: pointer;
     height: 2rem;
 }
 
 /* Buttons */
+
 .btn-container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    gap: 1rem;
 }
 
 .btn {
@@ -239,7 +258,12 @@ section {
     border: rgb(255,255,255) 0.1rem solid;
 }
 
+.btn-container {
+    gap: 1rem;
+}
+
 /* ABOUT SECTION */
+
 #about {
    position: relative;
 }
@@ -256,7 +280,7 @@ section {
 }
 
 .about-container,
-.about-details-container {
+.about-details-container{
     display: flex;
 }
 
@@ -264,10 +288,10 @@ section {
     border-radius: 2rem;
 }
 
-.arrow {
+.arrow{
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 2.5rem
 }
 
 .details-container {
@@ -280,31 +304,38 @@ section {
     text-align: center;
 }
 
-.section-container {
+.section-container{
     gap: 4rem;
     height: 80%;
 }
 
-/* EXPERIENCE SECTION */
-#experience {
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* EXPERIENCE SECITON */
+
+#experience{
     position: relative;
 }
 
-.experience-sub-title {
+.experience-sub-title{
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.experience-detials-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.article-container {
-    display: flex;
+.article-container{
+    display:flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
@@ -312,23 +343,24 @@ section {
     justify-content: space-around;
 }
 
-article {
+article{
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
 }
 
-article.ion {
+article.ion{
     cursor: default;
 }
 
 /* PROJECTS SECTION */
-#projects {
+
+#projects{
     position: relative;
 }
 
-.color-container {
+.color-container{
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
 }
@@ -340,12 +372,14 @@ article.ion {
     border-radius: 8px; /* Optional styling */
 }
 
-.project-title {
+
+
+.project-title{
     margin: 1rem;
     color: black;
 }
 
-.project-btn {
+.project-btn{
     color: black;
     border-color: rgb(163, 163, 163);
 }
@@ -357,7 +391,6 @@ article.ion {
     height: auto;
     cursor: pointer;
 }
-
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -374,7 +407,25 @@ article.ion {
     text-align: center; /* Center text inside project cards */
 }
 
+.project-img {
+    max-width: 100%; /* Make sure the image fits within the project card */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 1rem; /* Adjust margin as needed */
+}
+
+.project-btn {
+    /* Add any additional styling for the button here */
+}
+
+
 /* CONTACT */
+
 #contact {
     display: flex;
     justify-content: center;
@@ -382,18 +433,18 @@ article.ion {
     height: 70vh;
 }
 
-.contact-info-upper-container {
+.contact-info-upper-container{
     display: flex;
     justify-content: center;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    background: (250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
 }
 
-.contact-info-container {
+.contact-info-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -414,6 +465,7 @@ article.ion {
 }
 
 /* FOOTER SECTION */
+
 footer {
     display: flex;
     flex-direction: column;
@@ -425,6 +477,15 @@ footer {
 }
 
 .footer-container {
-    display
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    width: 100%;
+}
 
+
+
+
+footer .nav-links li a {
+    color: white;
+} 
 
