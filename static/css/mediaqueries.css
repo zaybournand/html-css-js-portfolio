@@ -107,6 +107,13 @@
         gap: 0.5rem;
         text-align: center;
     }
+    .section__pic-container {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
     .section__text__p2 {
         font-size: 1rem;
     }
