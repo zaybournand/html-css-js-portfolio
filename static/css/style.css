@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,18 +18,15 @@ html {
 p {
     color: rgb(85, 85, 85);
 }
-/* TRANSITION */
 
 /* TRANSITION */
-a, 
+a,
 .btn {
     transition: all 300ms ease;
 }
-/* DESKTOP NAV */
 
 /* DESKTOP NAV */
 nav,
-.nav-links{
 .nav-links {
     display: flex;
 }
@@ -37,7 +35,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 17vh;
-    
 }
 
 .nav-links {
@@ -47,13 +44,12 @@ nav {
 }
 
 .logo {
-    font-size: 2rem; /* Adjust font size as needed */
+    font-size: 2rem;
 }
 
 a {
     color: black;
     text-decoration: none;
-    text-decoration-color: white;
 }
 
 a:hover {
@@ -61,13 +57,6 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
-}
-.logo{
-    font-size: 2rem;
-}
-
-.logo:hover {
-    cursor: default;
 }
 
 #hamburger-nav {
@@ -80,7 +69,7 @@ a:hover {
 }
 
 .hamburger-icon {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 24px;
@@ -113,7 +102,6 @@ a:hover {
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
@@ -136,71 +124,51 @@ a:hover {
     transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child {
-    transform: none;
-}
-.hamburger-icon span:first-child {
-    opacity: 1;
-}
-.hamburger-icon span:first-child{
-    transform: none;
-}
 /* Section */
 section {
     padding-top: 4vh;
-    height: 96vh;
-    margin:0 10rem;
     margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
+    min-height: fit-content; /* Ensure sections expand based on content */
+    padding-bottom: 2rem; /* Add space between sections */
+    overflow: auto; /* Prevent overflow */
 }
 
-.section-container{
-.section-container {
-    display: flex;
-}
-
-/* PROFILE SECTION*/
-#profile{
 /* PROFILE SECTION */
 #profile {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh
-    height: 80vh;
+    min-height: fit-content; /* Remove fixed height */
 }
 
 .section__pic-container {
     display: flex;
-    height: 400px; 
-    width: 400px; 
-    margin: auto 0;
+    height: 400px;
+    width: 400px;
 }
 
 .section__text {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content horizontally */
-    text-align: center;  /* Ensure text alignment is centered */
+    align-items: center;
+    text-align: center;
 }
+
 .section_text_p {
     font-weight: 600;
 }
 
-.section__text__p1{
 .section__text__p1 {
     text-align: center;
 }
 
-.section__text__p2{
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
 .title {
-    font-size: 3rem; 
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -227,14 +195,9 @@ section {
 
 .btn {
     font-weight: 600;
-    transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
     border: rgb(53,53,53) 0.1rem solid;
 }
 
@@ -243,14 +206,8 @@ section {
     cursor: pointer;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
-    background: rgb(53,53,53);
-    color: white;
-}
-
-.btn-color-1:hover {
-    background: rgb(0,0,0);
+.btn-color-1 {
+    background: none;
 }
 
 .btn-color-2 {
@@ -261,12 +218,10 @@ section {
     border: rgb(255,255,255) 0.1rem solid;
 }
 
-.btn-container {
-    gap: 1rem;
-}
 /* ABOUT SECTION */
 #about {
-   position: relative;
+    position: relative;
+    margin-top: 2rem; /* Add space between sections */
 }
 
 .about-container {
@@ -282,7 +237,6 @@ section {
 
 .about-container,
 .about-details-container{
-.about-details-container {
     display: flex;
 }
 
@@ -290,11 +244,9 @@ section {
     border-radius: 2rem;
 }
 
-.arrow{
 .arrow {
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem
     bottom: 2.5rem;
 }
 
@@ -308,25 +260,23 @@ section {
     text-align: center;
 }
 
-.section-container{
 .section-container {
     gap: 4rem;
-    height: 80%;
+    min-height: fit-content;
 }
 
-.section__pic-container{
+.section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
 }
-/* EXPERIENCE SECITON */
-#experience{
+
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
+    margin-top: 2rem; /* Add space between sections */
 }
 
-.experience-sub-title{
 .experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
@@ -334,15 +284,12 @@ section {
     margin-bottom: 2rem;
 }
 
-.experience-detials-container{
-.experience-details-container {
+.experience-detials-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.article-container{
-    display:flex;
 .article-container {
     display: flex;
     text-align: initial;
@@ -352,7 +299,6 @@ section {
     justify-content: space-around;
 }
 
-article{
 article {
     display: flex;
     width: 10rem;
@@ -360,37 +306,33 @@ article {
     gap: 0.5rem;
 }
 
-article.ion{
 article.ion {
     cursor: default;
 }
 
 /* PROJECTS SECTION */
-#projects{
 #projects {
     position: relative;
+    margin-top: 2rem; /* Add space between sections */
 }
 
-.color-container{
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
 }
 
 .project-img {
-    width: 200px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Responsive */
-    border-radius: 8px; /* Optional styling */
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
 }
 
-.project-title{
 .project-title {
     margin: 1rem;
     color: black;
 }
 
-.project-btn{
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
@@ -403,57 +345,42 @@ article.ion {
     height: auto;
     cursor: pointer;
 }
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the project cards */
-    gap: 1rem; /* Adjust the gap between project cards */
+    justify-content: center;
+    gap: 1rem;
 }
 
 .project-card {
-    background-color: #f4f4f4; /* Background color for project cards */
-    border-radius: 8px; /* Rounded corners */
-    padding: 1rem; /* Padding inside project cards */
-    width: 300px; /* Fixed width for project cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    text-align: center; /* Center text inside project cards */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.project-img {
-    max-width: 100%; /* Make sure the image fits within the project card */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 8px; /* Rounded corners for the image */
-}
-.btn-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    margin-top: 1rem; /* Adjust margin as needed */
-}
-.project-btn {
-    /* Add any additional styling for the button here */
-}
 /* CONTACT */
 #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    min-height: fit-content;
 }
 
-.contact-info-upper-container{
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background: (250, 250, 250);
-    background: rgb(250, 250, 250);
+    background-color: rgb(250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
 }
 
-.contact-info-container{
 .contact-info-container {
     display: flex;
     align-items: center;
@@ -478,20 +405,27 @@ article.ion {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the text horizontally */
-    justify-content: center; /* Center vertically if needed */
+    align-items: center;
+    justify-content: center;
     padding: 20px 0;
-    background-color: #333; /* Example background */
+    background-color: #333;
     color: white;
 }
 
 .footer-container {
     display: flex;
-    justify-content: center; /* Center the navigation links */
+    justify-content: center;
     width: 100%;
 }
+
 footer .nav-links li a {
     color: white;
 }
-    
-   
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+    section {
+        margin: 0 2rem;
+        padding-bottom: 1rem;
+    }
+}
