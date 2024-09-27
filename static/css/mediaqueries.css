@@ -5,11 +5,9 @@
         display: flex;
         align-items: center; /* Align profile image to the center vertically */
     }
-     .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
+     .about-containers {
         flex-wrap: wrap;
-        justify-content: center;
+      
     }
 }
 
@@ -34,7 +32,7 @@
     #experience,
     .experience-details-container {
         margin-top: 2rem;
-        margin-bottom: 4rem; /* Add spacing below experience */
+        
     }
     #profile,
     .section-container {
@@ -46,17 +44,14 @@
     section,
     .section-container {
         height: fit-content;
-        margin-bottom: 4rem; /* Add spacing between sections */
-    }
+        
     section {
         margin: 0 1%;
     }
     .section__pic-container {
-        width: 200px;
-        height: 200px;
+        width: 275px;
+        height: 275px;
         margin: 0 auto 2rem;
-        border-radius: 50%;
-        object-fit: cover;
     }
     .about-containers {
         margin-top: 0;
@@ -91,7 +86,7 @@
     .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
-        justify-content: center;
+        
     }
     #contact-info-container {
         max-width: 200px;
@@ -107,6 +102,12 @@
         font-size: 1rem;
         margin: 0.5rem 0;
         text-align: center;
+    }
+    .experience-sub-title{
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
     }
     .nav-links {
         flex-direction: column;
