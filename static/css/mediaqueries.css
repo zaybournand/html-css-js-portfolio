@@ -5,25 +5,18 @@
         display: flex;
         align-items: center; /* Align profile image to the center vertically */
     }
-    .about-container, .experience-details-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%; /* Set a full width */
-        max-width: 1200px; /* Limit max width for larger screens */
-        margin-bottom: 4rem; /* Add spacing to ensure separation between sections */
+    .about-container {
+        flex-wrap: nowrap;
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-container, .experience-details-container {
+    .about-container {
         flex-wrap: wrap;
-        margin-bottom: 6rem; /* Add more space between sections */
-        width: 100%;
-        max-width: 1200px; /* Ensure max width */
     }
 }
 
@@ -34,14 +27,10 @@
     #hamburger-nav {
         display: flex;
     }
-    #experience {
-        margin-top: 4rem;
-        margin-bottom: 6rem; /* Ensure spacing below experience section */
-    }
+}
+    #experience,
     .experience-details-container {
         margin-top: 2rem;
-        margin-bottom: 6rem; /* Add more space between experience details */
-        width: 100%; /* Ensure full width for smaller screens */
     }
     #profile,
     .section-container {
@@ -53,7 +42,6 @@
     section,
     .section-container {
         height: fit-content;
-        margin-bottom: 6rem; /* Add more spacing between sections */
     }
     section {
         margin: 0 1%;
@@ -99,11 +87,9 @@
     .btn-container {
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
-        max-width: 200px; /* Ensure max width for smaller screens */
-        margin: 0 auto;
     }
     #contact-info-container {
+        max-width: 200px;
         margin: 0 auto;
         padding: 1rem;
     }
