@@ -1,3 +1,5 @@
+
+
 @media screen and (min-width: 1400px) {
     #profile {
         height: 70vh; /* Adjust height for larger screens */
@@ -5,25 +7,22 @@
         display: flex;
         align-items: center; /* Align profile image to the center vertically */
     }
-    .about-container, .experience-details-container {
+     .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%; /* Set a full width */
-        max-width: 1200px; /* Limit max width for larger screens */
-        margin-bottom: 2rem; /* Reduce margin */
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-container, .experience-details-container {
+    .about-container {
         flex-wrap: wrap;
         margin-bottom: 4rem; /* Add spacing between sections */
-        width: 100%;
-        max-width: 1200px; /* Ensure max width */
     }
 }
 
@@ -38,7 +37,6 @@
     .experience-details-container {
         margin-top: 2rem;
         margin-bottom: 4rem; /* Add spacing below experience */
-        width: 100%; /* Ensure full width for smaller screens */
     }
     #profile,
     .section-container {
@@ -96,11 +94,9 @@
     .btn-container {
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
-        max-width: 200px; /* Ensure max width for smaller screens */
-        margin: 0 auto;
     }
     #contact-info-container {
+        max-width: 200px;
         margin: 0 auto;
         padding: 1rem;
     }
@@ -149,4 +145,4 @@
     #profile {
         margin-top: -1rem; /* Slightly raise the profile section */
     }
-}
+} 
