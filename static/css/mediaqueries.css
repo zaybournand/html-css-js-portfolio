@@ -3,13 +3,18 @@
         height: 70vh; /* Adjust height for larger screens */
         margin-bottom: 4rem; /* Reduce the bottom margin */
         display: flex;
-        align-items: center; /* Align profile image to the center vertically */
+        align-items: center; /* Center profile image vertically */
     }
-     .about-containers,
+    
+    .about-container,
     .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .about-container {
+        justify-content: flex-start; /* Align items to the left */
     }
 }
 
@@ -18,130 +23,144 @@
         height: 83vh;
         margin-bottom: 6rem;
     }
+    
     .about-container {
-        flex-wrap: wrap;
         margin-bottom: 4rem; /* Add spacing between sections */
+        flex-direction: row; /* Ensure flex direction is row for larger screens */
+        align-items: center; /* Center align items vertically */
     }
 }
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
-        display: none;
+        display: none; /* Hide desktop nav */
     }
+    
     #hamburger-nav {
-        display: flex;
+        display: flex; /* Show hamburger nav */
     }
+
     #experience,
     .experience-details-container {
         margin-top: 2rem;
         margin-bottom: 4rem; /* Add spacing below experience */
     }
+
     #profile,
     .section-container {
-        display: block;
+        display: block; /* Stack sections on smaller screens */
     }
+    
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
     .arrow {
-        display: none;
+        display: none; /* Hide arrow on smaller screens */
     }
+    
     section,
     .section-container {
         height: fit-content;
         margin-bottom: 4rem; /* Add spacing between sections */
     }
-    section {
-        margin: 0 1%;
-    }
+
     .section__pic-container {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto 2rem;
-        border-radius: 50%;
-        object-fit: cover;
+        width: 200px; /* Set size for section pictures */
+        height: 200px; /* Set size for section pictures */
+        margin: 0 auto 2rem; /* Center margin */
+        border-radius: 50%; /* Round corners */
+        object-fit: cover; /* Maintain aspect ratio */
     }
-    .about-containers {
-        margin-top: 0;
+
+    .about-container {
+        margin-top: 0; /* Reset margin */
     }
 }
 
 @media screen and (max-width: 600px) {
     #contact,
     footer {
-        height: auto;
-        padding: 1rem;
+        height: auto; /* Set height to auto */
+        padding: 1rem; /* Add padding */
     }
+
     #profile {
-        height: auto;
-        margin-bottom: 0;
+        height: auto; /* Set height to auto */
+        margin-bottom: 0; /* Reset margin */
     }
+
     .section__pic-container {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto 1rem;
-        border-radius: 50%;
-        object-fit: cover;
+        width: 150px; /* Set size for section pictures */
+        height: 150px; /* Set size for section pictures */
+        margin: 0 auto 1rem; /* Center margin */
+        border-radius: 50%; /* Round corners */
+        object-fit: cover; /* Maintain aspect ratio */
     }
+
     article {
-        font-size: 1rem;
+        font-size: 1rem; /* Set font size */
     }
+
     footer nav {
-        height: auto;
-        margin-bottom: 2rem;
+        height: auto; /* Set height to auto */
+        margin-bottom: 2rem; /* Add bottom margin */
     }
+
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center items */
     }
+
     #contact-info-container {
-        max-width: 200px;
-        margin: 0 auto;
-        padding: 1rem;
+        max-width: 200px; /* Set max width */
+        margin: 0 auto; /* Center margin */
+        padding: 1rem; /* Add padding */
     }
+
     .contact-info-container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
     }
+
     .contact-info-container p {
-        font-size: 1rem;
-        margin: 0.5rem 0;
-        text-align: center;
+        font-size: 1rem; /* Set font size */
+        margin: 0.5rem 0; /* Set margin */
+        text-align: center; /* Center text */
     }
+
     .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
+        flex-direction: column; /* Stack links vertically */
+        gap: 0.5rem; /* Set gap between links */
+        text-align: center; /* Center text */
     }
+
     .section__pic-container {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto 1rem;
-        border-radius: 50%;
-        object-fit: cover;
+        width: 150px; /* Set size for section pictures */
+        height: 150px; /* Set size for section pictures */
+        margin: 0 auto 1rem; /* Center margin */
+        border-radius: 50%; /* Round corners */
+        object-fit: cover; /* Maintain aspect ratio */
     }
+
     .section__text__p2 {
-        font-size: 1rem;
+        font-size: 1rem; /* Set font size */
     }
+
     .title {
-        font-size: 1rem;
+        font-size: 1rem; /* Set font size */
     }
+
     .text-container {
-        text-align: justify;
+        text-align: justify; /* Justify text */
     }
+
     .arrow {
-        display: none;
+        display: none; /* Hide arrow */
     }
 
-    /* Adjustments to black box and position of profile and "Get to know more about" */
-    #black-box {
-        height: 85vh; /* Make the black box longer */
-    }
-    #get-to-know {
-        margin-top: 4rem; /* Lower the "Get to know more about" section */
-    }
-    #profile {
-        margin-top: -1rem; /* Slightly raise the profile section */
-    }
-}
-
+    /* Adjustments to black box and position of profile and "Get to know more
