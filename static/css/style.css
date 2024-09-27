@@ -218,8 +218,9 @@ section {
 }
 
 /* ABOUT SECTION */
+
 #about {
-    position: relative;
+   position: relative;
 }
 
 .about-container {
@@ -231,17 +232,21 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
-    display: flex; /* Ensure it's a flex container */
+}
+
+.about-container,
+.about-details-container{
+    display: flex;
 }
 
 .about-pic {
     border-radius: 2rem;
 }
 
-.arrow {
+.arrow{
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 2.5rem
 }
 
 .details-container {
@@ -254,10 +259,17 @@ section {
     text-align: center;
 }
 
-.section-container {
+.section-container{
     gap: 4rem;
     height: 80%;
 }
+
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
 
 /* EXPERIENCE SECTION */
 #experience {
