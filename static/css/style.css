@@ -224,62 +224,51 @@ section {
 }
 
 .about-container {
-    display: flex; /* Ensure flex layout */
-    align-items: center; /* Center items vertically */
-    gap: 2rem; /* Space between the picture and text */
+    gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
 .about-details-container {
-    flex: 1; /* Take the remaining space next to the profile picture */
     justify-content: center;
+    flex-direction: column;
+}
+
+.about-container,
+.about-details-container{
+    display: flex;
 }
 
 .about-pic {
     border-radius: 2rem;
-    width: 150px; /* Set a fixed width for the profile picture */
-    height: 150px; /* Set a fixed height for the profile picture */
-    object-fit: cover; /* Maintain aspect ratio */
 }
 
-.arrow {
+.arrow{
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 2.5rem
 }
 
 .details-container {
     padding: 1.5rem;
+    flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(163, 163, 163) 0.1rem solid;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
     text-align: center;
 }
 
-/* Media Queries */
-@media screen and (max-width: 1200px) {
-    .about-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center align items */
-    }
-
-    .about-pic {
-        width: 100px; /* Smaller size for mobile */
-        height: 100px; /* Smaller size for mobile */
-    }
-
-    .details-container {
-        text-align: center; /* Center text on smaller screens */
-    }
+.section-container{
+    gap: 4rem;
+    height: 80%;
 }
 
-@media screen and (max-width: 600px) {
-    .about-container {
-        margin-top: 1rem; /* Adjust margin for small screens */
-    }
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
-
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
