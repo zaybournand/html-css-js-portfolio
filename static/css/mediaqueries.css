@@ -7,6 +7,7 @@
     }
     .about-container {
         flex-wrap: nowrap;
+        margin-bottom: 4rem; /* Add spacing below the About section */
     }
 }
 
@@ -17,15 +18,17 @@
     }
     .about-container {
         flex-wrap: wrap;
+        margin-bottom: 4rem; /* Add spacing below the About section */
     }
 }
+
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
-}
+    }
 
     #experience,
     .experience-details-container {
@@ -137,4 +140,13 @@
     #profile {
         margin-top: -1rem; /* Slightly raise the profile section */
     }
+
+    /* Added spacing for mobile view */
+    .about-container {
+        margin-bottom: 4rem; /* Add spacing below the About section */
+    }
+    #experience {
+        margin-top: 4rem; /* Increase top margin to create more space */
+    }
 }
+
