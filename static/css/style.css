@@ -221,17 +221,15 @@ section {
 
 #about {
     position: relative;
-    display: flex; /* Enable flexbox on the section */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the entire section */
 }
 
 .about-container {
     display: flex; /* Keep the container as a flexbox */
     gap: 2rem; /* Space between picture and text */
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    align-items: center; /* Center items vertically within the container */
+    margin: 2rem 0; /* Adjust margins for spacing */
+    align-items: flex-start; /* Align items to the top */
 }
 
 .about-details-container {
@@ -242,8 +240,8 @@ section {
 
 .about-pic {
     border-radius: 2rem;
-    display: block; /* Ensure the image is treated as a block element */
-    margin: 0 auto; /* Center the image horizontally */
+    width: 150px; /* Set a specific width for the profile picture */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .arrow {
@@ -254,7 +252,7 @@ section {
 
 .details-container {
     padding: 1.5rem;
-    flex: 1;
+    flex: 1; /* Allow the details container to grow */
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -264,13 +262,11 @@ section {
 
 .section-container {
     gap: 4rem;
-    height: 80%;
+    height: auto; /* Adjust height to content */
 }
 
 .section__pic-container {
-    height: 400px; /* Match the size of the picture */
-    width: 400px; /* Match the size of the picture */
-    display: flex; /* Enable flexbox for centering */
+    display: flex; /* Ensure it uses flexbox for centering */
     justify-content: center; /* Center picture within the container */
     align-items: center; /* Center vertically */
 }
