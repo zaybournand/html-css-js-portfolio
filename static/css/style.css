@@ -126,13 +126,14 @@ a:hover {
 
 /* Section */
 section {
-   padding-top: 4vh;
-    margin: 0 10rem;
-    min-height: fit-content; /* Ensure sections expand based on content */
-    padding-bottom: 2rem; /* Add space between sections */
-    overflow: auto;
+   padding: 4vh 10rem;
+    min-height: 100vh;          
+    margin-bottom: 4vh;         
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 10vh;    
 }
-
 /* PROFILE SECTION */
 #profile {
     display: flex;
