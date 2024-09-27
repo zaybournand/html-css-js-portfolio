@@ -5,13 +5,26 @@
         margin-bottom: 4rem; /* Reduce the bottom margin */
         display: flex;
         align-items: center; /* Align profile image to the center vertically */
+        justify-content: center; /* Center the profile container */
     }
-    .about-container, .experience-details-container {
+    .about-container {
+        display: flex; /* Use flexbox to position items side by side */
+        align-items: center; /* Center items vertically */
+        justify-content: flex-start; /* Align items to the start */
+        margin-bottom: 4rem; /* Add spacing below */
+        max-width: 1200px; /* Limit max width */
+        width: 100%; /* Full width */
+    }
+    .about-container .section__pic-container {
+        margin-right: 2rem; /* Space between picture and text */
+    }
+    .experience-details-container {
         flex-wrap: wrap;
-        justify-content: center;
-        width: 100%; /* Set a full width */
-        max-width: 1200px; /* Limit max width for larger screens */
-        margin-bottom: 4rem; /* Add spacing to ensure separation between sections */
+        justify-content: center; /* Center the experience section */
+        width: 100%; /* Full width */
+        max-width: 1200px; /* Limit max width */
+        margin: 0 auto; /* Center the container */
+        margin-bottom: 4rem; /* Add spacing below */
     }
 }
 
@@ -21,11 +34,22 @@
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-container, .experience-details-container {
-        flex-wrap: wrap;
-        margin-bottom: 6rem; /* Add more space between sections */
-        width: 100%;
+    .about-container {
+        display: flex; /* Flexbox for about section */
+        align-items: center; /* Center items vertically */
+        justify-content: flex-start; /* Align items to the start */
+        margin-bottom: 6rem; /* More space below */
+        max-width: 1200px; /* Limit max width */
+        width: 100%; /* Full width */
+    }
+    .about-container .section__pic-container {
+        margin-right: 2rem; /* Space between picture and text */
+    }
+    .experience-details-container {
+        margin: 0 auto; /* Center the experience section */
+        width: 100%; /* Full width */
         max-width: 1200px; /* Ensure max width */
+        margin-bottom: 6rem; /* More space below */
     }
 }
 
@@ -43,8 +67,9 @@
     }
     .experience-details-container {
         margin-top: 2rem;
-        margin-bottom: 6rem; /* Add more space between experience details */
-        width: 100%; /* Ensure full width for smaller screens */
+        margin-bottom: 6rem; /* Add more space below */
+        width: 100%; /* Ensure full width */
+        max-width: 100%; /* Full width */
     }
     #profile,
     .section-container {
@@ -61,15 +86,18 @@
     section {
         margin: 0 1%; /* Set side margins */
     }
+    .about-container {
+        display: flex; /* Use flexbox for about section */
+        flex-direction: column; /* Stack for small screens */
+        align-items: center; /* Center items */
+        margin-bottom: 0; /* Reset margin */
+    }
     .section__pic-container {
         width: 200px; /* Adjust picture size */
         height: 200px;
         margin: 0 auto 2rem; /* Center image with bottom margin */
         border-radius: 50%; /* Make it circular */
         object-fit: cover; /* Cover the container */
-    }
-    .about-containers {
-        margin-top: 0; /* Reset margin */
     }
 }
 
