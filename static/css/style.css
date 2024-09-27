@@ -221,57 +221,54 @@ section {
 
 #about {
    position: relative;
-   display: flex; /* Use flexbox for layout */
-   justify-content: center; /* Center contents horizontally */
-   align-items: center; /* Center contents vertically */
 }
 
 .about-container {
-    display: flex; /* Ensure this is a flex container */
-    gap: 2rem; /* Space between the picture and the text */
+    gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    width: 100%; /* Ensure it takes full width */
 }
 
 .about-details-container {
-    display: flex; /* Ensure this is also a flex container */
-    flex-direction: column; /* Stack text vertically */
-    justify-content: center; /* Center content vertically */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container,
+.about-details-container{
+    display: flex;
 }
 
 .about-pic {
     border-radius: 2rem;
 }
 
-.arrow {
+.arrow{
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 2.5rem
 }
 
 .details-container {
     padding: 1.5rem;
-    flex: 1; /* Allow this to grow and fill space */
+    flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
 }
 
-.section-container {
+.section-container{
     gap: 4rem;
     height: 80%;
 }
 
-.section__pic-container {
+.section__pic-container{
     height: 400px;
     width: 400px;
-    margin: auto 0; /* Center vertically in the flex container */
+    margin: auto 0;
 }
-
-
 
 /* EXPERIENCE SECTION */
 #experience {
