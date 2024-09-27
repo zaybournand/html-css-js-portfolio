@@ -27,12 +27,10 @@
     #hamburger-nav {
         display: flex;
     }
-}
     #experience,
     .experience-details-container {
         margin-top: 2rem;
     }
-
     #profile,
     .section-container {
         display: block;
@@ -138,14 +136,6 @@
     }
     #profile {
         margin-top: -1rem; /* Slightly raise the profile section */
-    }
-
-    /* Added spacing for mobile view */
-    .about-container {
-        margin-bottom: 4rem; /* Add spacing below the About section */
-    }
-    #experience {
-        margin-top: 4rem; /* Increase top margin to create more space */
     }
 }
 
