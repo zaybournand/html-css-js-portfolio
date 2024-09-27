@@ -5,9 +5,11 @@
         display: flex;
         align-items: center; /* Align profile image to the center vertically */
     }
-    .about-container {
-        flex-wrap: nowrap;
-        margin-bottom: 4rem; /* Add spacing between sections */
+     .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
