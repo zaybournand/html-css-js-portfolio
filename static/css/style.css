@@ -220,57 +220,55 @@ section {
 /* ABOUT SECTION */
 
 #about {
-    position: relative;
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the entire section */
+   position: relative;
 }
 
 .about-container {
-    display: flex; /* Keep the container as a flexbox */
-    gap: 2rem; /* Space between picture and text */
-    margin: 2rem 0; /* Adjust margins for spacing */
-    align-items: flex-start; /* Align items to the top */
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .about-details-container {
-    display: flex; /* Ensure this is a flex container */
-    flex-direction: column; /* Stack text vertically */
-    justify-content: center; /* Center content vertically */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container,
+.about-details-container{
+    display: flex;
 }
 
 .about-pic {
     border-radius: 2rem;
-    width: 150px; /* Set a specific width for the profile picture */
-    height: auto; /* Maintain aspect ratio */
 }
 
-.arrow {
+.arrow{
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 2.5rem
 }
 
 .details-container {
     padding: 1.5rem;
-    flex: 1; /* Allow the details container to grow */
+    flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
 }
 
-.section-container {
+.section-container{
     gap: 4rem;
-    height: auto; /* Adjust height to content */
+    height: 80%;
 }
 
-.section__pic-container {
-    display: flex; /* Ensure it uses flexbox for centering */
-    justify-content: center; /* Center picture within the container */
-    align-items: center; /* Center vertically */
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
-
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
