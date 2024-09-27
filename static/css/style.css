@@ -218,59 +218,63 @@ section {
 }
 
 /* ABOUT SECTION */
- 
- #about {
+
+#about {
     position: relative;
-<<<<<<< HEAD
- }
- 
- .about-container {
-     gap: 2rem;
-     margin-bottom: 2rem;
-     margin-top: 2rem;
- }
- 
- .about-details-container {
-     justify-content: center;
-     flex-direction: column;
- }
- 
- .about-container,
- .about-details-container{
-     display: flex;
- }
- 
- .about-pic {
-     border-radius: 2rem;
- }
- 
- .arrow{
-     position: absolute;
-     right: -5rem;
-     bottom: 2.5rem
- }
- 
- .details-container {
-     padding: 1.5rem;
-     flex: 1;
-     background: white;
-     border-radius: 2rem;
-     border: rgb(53,53,53) 0.1rem solid;
-     border-color: rgb(163, 163, 163);
-     text-align: center;
- }
- 
- .section-container{
-     gap: 4rem;
-     height: 80%;
- }
- 
- .section__pic-container{
-     height: 400px;
-     width: 400px;
-     margin: auto 0;
- }
- 
+    display: flex; /* Enable flexbox on the section */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.about-container {
+    display: flex; /* Keep the container as a flexbox */
+    gap: 2rem; /* Space between picture and text */
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    align-items: center; /* Center items vertically within the container */
+}
+
+.about-details-container {
+    display: flex; /* Ensure this is a flex container */
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+.about-pic {
+    border-radius: 2rem;
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 400px; /* Match the size of the picture */
+    width: 400px; /* Match the size of the picture */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center picture within the container */
+    align-items: center; /* Center vertically */
+}
+
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
