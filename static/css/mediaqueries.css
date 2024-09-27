@@ -1,3 +1,4 @@
+/* Large Screens */
 @media screen and (min-width: 1400px) {
     #profile {
         height: 70vh; /* Adjust height for larger screens */
@@ -14,6 +15,7 @@
     }
 }
 
+/* Medium Screens */
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
     #profile {
         height: 83vh;
@@ -27,12 +29,13 @@
     }
 }
 
+/* Small Screens */
 @media screen and (max-width: 1200px) {
     #desktop-nav {
-        display: none;
+        display: none; /* Hide desktop navigation */
     }
     #hamburger-nav {
-        display: flex;
+        display: flex; /* Show hamburger navigation */
     }
     #experience {
         margin-top: 4rem;
@@ -45,101 +48,93 @@
     }
     #profile,
     .section-container {
-        display: block;
+        display: block; /* Change display for smaller screens */
     }
     .arrow {
-        display: none;
+        display: none; /* Hide arrows on small screens */
     }
     section,
     .section-container {
-        height: fit-content;
+        height: fit-content; /* Fit content height */
         margin-bottom: 6rem; /* Add more spacing between sections */
     }
     section {
-        margin: 0 1%;
+        margin: 0 1%; /* Set side margins */
     }
     .section__pic-container {
-        width: 200px;
+        width: 200px; /* Adjust picture size */
         height: 200px;
-        margin: 0 auto 2rem;
-        border-radius: 50%;
-        object-fit: cover;
+        margin: 0 auto 2rem; /* Center image with bottom margin */
+        border-radius: 50%; /* Make it circular */
+        object-fit: cover; /* Cover the container */
     }
     .about-containers {
-        margin-top: 0;
+        margin-top: 0; /* Reset margin */
     }
 }
 
+/* Extra Small Screens */
 @media screen and (max-width: 600px) {
     #contact,
     footer {
-        height: auto;
-        padding: 1rem;
+        height: auto; /* Set height to auto */
+        padding: 1rem; /* Add padding */
     }
     #profile {
-        height: auto;
-        margin-bottom: 0;
+        height: auto; /* Set height to auto for profile */
+        margin-bottom: 0; /* Reset bottom margin */
     }
     .section__pic-container {
-        width: 150px;
+        width: 150px; /* Adjust picture size for smaller screens */
         height: 150px;
-        margin: 0 auto 1rem;
-        border-radius: 50%;
-        object-fit: cover;
+        margin: 0 auto 1rem; /* Center image with bottom margin */
+        border-radius: 50%; /* Circular image */
+        object-fit: cover; /* Cover the container */
     }
     article {
-        font-size: 1rem;
+        font-size: 1rem; /* Adjust font size */
     }
     footer nav {
-        height: auto;
-        margin-bottom: 2rem;
+        height: auto; /* Set height to auto */
+        margin-bottom: 2rem; /* Margin below footer */
     }
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        max-width: 200px; /* Ensure max width for smaller screens */
-        margin: 0 auto;
+        flex-wrap: wrap; /* Wrap contents */
+        justify-content: center; /* Center contents */
+        width: 100%; /* Full width */
+        max-width: 200px; /* Limit max width for smaller screens */
+        margin: 0 auto; /* Center margin */
     }
     #contact-info-container {
-        margin: 0 auto;
-        padding: 1rem;
+        margin: 0 auto; /* Center container */
+        padding: 1rem; /* Add padding */
     }
     .contact-info-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: flex; /* Flex display */
+        flex-direction: column; /* Stack items */
+        align-items: center; /* Center items */
     }
     .contact-info-container p {
-        font-size: 1rem;
-        margin: 0.5rem 0;
-        text-align: center;
+        font-size: 1rem; /* Adjust font size */
+        margin: 0.5rem 0; /* Set margin */
+        text-align: center; /* Center align text */
     }
     .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
+        flex-direction: column; /* Stack links */
+        gap: 0.5rem; /* Set gap between links */
+        text-align: center; /* Center text */
     }
-    .section__pic-container {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto 1rem;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-    .section__text__p2 {
-        font-size: 1rem;
-    }
+    .section__text__p2,
     .title {
-        font-size: 1rem;
+        font-size: 1rem; /* Adjust font size */
     }
     .text-container {
-        text-align: justify;
+        text-align: justify; /* Justify text */
     }
     .arrow {
-        display: none;
+        display: none; /* Hide arrows */
     }
 
     /* Adjustments to black box and position of profile and "Get to know more about" */
