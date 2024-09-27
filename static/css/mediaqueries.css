@@ -7,7 +7,6 @@
     }
     .about-container {
         flex-wrap: nowrap;
-        margin-bottom: 4rem; /* Add spacing below the About section */
     }
 }
 
@@ -18,7 +17,6 @@
     }
     .about-container {
         flex-wrap: wrap;
-        margin-bottom: 4rem; /* Add spacing below the About section */
     }
 }
 
@@ -29,11 +27,12 @@
     #hamburger-nav {
         display: flex;
     }
-
+}
     #experience,
     .experience-details-container {
         margin-top: 2rem;
     }
+
     #profile,
     .section-container {
         display: block;
