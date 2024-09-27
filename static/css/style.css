@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure consistent box sizing */
+    box-sizing: border-box;
 }
 
 body {
@@ -44,7 +44,7 @@ nav {
 }
 
 .logo {
-    font-size: 2rem; /* Adjust font size as needed */
+    font-size: 2rem;
 }
 
 a {
@@ -60,7 +60,7 @@ a:hover {
 }
 
 #hamburger-nav {
-    display: none; /* Consider media queries to show/hide for mobile */
+    display: none;
 }
 
 .hamburger-menu {
@@ -69,7 +69,7 @@ a:hover {
 }
 
 .hamburger-icon {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 24px;
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .menu-links.open {
-    max-height: 300px; /* Adjust as needed */
+    max-height: 300px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -127,9 +127,10 @@ a:hover {
 /* Section */
 section {
     padding-top: 4vh;
-    height: 96vh;
     margin: 0 10rem;
-    min-height: fit-content;
+    min-height: fit-content; /* Ensure sections expand based on content */
+    padding-bottom: 2rem; /* Add space between sections */
+    overflow: auto; /* Prevent overflow */
 }
 
 /* PROFILE SECTION */
@@ -137,20 +138,20 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    min-height: fit-content; /* Remove fixed height */
 }
 
 .section__pic-container {
     display: flex;
-    height: 400px; 
-    width: 400px; 
+    height: 400px;
+    width: 400px;
 }
 
 .section__text {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    text-align: center;  
+    align-items: center;
+    text-align: center;
 }
 
 .section_text_p {
@@ -167,7 +168,7 @@ section {
 }
 
 .title {
-    font-size: 3rem; 
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -218,9 +219,9 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
-   position: relative;
+    position: relative;
+    margin-top: 2rem; /* Add space between sections */
 }
 
 .about-container {
@@ -243,10 +244,10 @@ section {
     border-radius: 2rem;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem
+    bottom: 2.5rem;
 }
 
 .details-container {
@@ -259,19 +260,21 @@ section {
     text-align: center;
 }
 
-.section-container{
+.section-container {
     gap: 4rem;
-    height: 80%;
+    min-height: fit-content;
 }
 
-.section__pic-container{
+.section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
 }
+
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
+    margin-top: 2rem; /* Add space between sections */
 }
 
 .experience-sub-title {
@@ -310,6 +313,7 @@ article.ion {
 /* PROJECTS SECTION */
 #projects {
     position: relative;
+    margin-top: 2rem; /* Add space between sections */
 }
 
 .color-container {
@@ -318,10 +322,10 @@ article.ion {
 }
 
 .project-img {
-    width: 200px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Responsive */
-    border-radius: 8px; /* Optional styling */
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 .project-title {
@@ -345,17 +349,17 @@ article.ion {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the project cards */
-    gap: 1rem; /* Adjust the gap between project cards */
+    justify-content: center;
+    gap: 1rem;
 }
 
 .project-card {
-    background-color: #f4f4f4; /* Background color for project cards */
-    border-radius: 8px; /* Rounded corners */
-    padding: 1rem; /* Padding inside project cards */
-    width: 300px; /* Fixed width for project cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    text-align: center; /* Center text inside project cards */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* CONTACT */
@@ -363,7 +367,7 @@ article.ion {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    min-height: fit-content;
 }
 
 .contact-info-upper-container {
@@ -372,7 +376,7 @@ article.ion {
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background-color: rgb(250, 250, 250); /* Corrected property */
+    background-color: rgb(250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -398,26 +402,31 @@ article.ion {
 }
 
 /* FOOTER SECTION */
-
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the text horizontally */
-    justify-content: center; /* Center vertically if needed */
+    align-items: center;
+    justify-content: center;
     padding: 20px 0;
-    background-color: #333; /* Example background */
+    background-color: #333;
     color: white;
 }
 
 .footer-container {
     display: flex;
-    justify-content: center; /* Center the navigation links */
+    justify-content: center;
     width: 100%;
 }
 
-
-
-
 footer .nav-links li a {
     color: white;
-}  still not do you think it has to do with this code
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+    section {
+        margin: 0 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
