@@ -218,15 +218,17 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
    position: relative;
+   display: flex; /* Enable flexbox for layout */
+   align-items: flex-start; /* Align items at the top */
 }
 
 .about-container {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    display: flex; /* Ensure it's a flex container */
 }
 
 .about-details-container {
@@ -269,6 +271,7 @@ section {
     width: 400px;
     margin: auto 0;
 }
+
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
@@ -403,21 +406,4 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the text horizontally */
-    justify-content: center; /* Center vertically if needed */
-    padding: 20px 0;
-    background-color: #333; /* Example background */
-    color: white;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: center; /* Center the navigation links */
-    width: 100%;
-}
-
-
-
-
-footer .nav-links li a {
-    color: white;
-}  
+    justify-content: center; /* Center vertically
