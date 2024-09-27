@@ -220,42 +220,55 @@ section {
 /* ABOUT SECTION */
 
 #about {
-    display: flex; /* Use flexbox for alignment */
-    align-items: flex-start; /* Align items to the top */
-    justify-content: center; /* Center the whole section */
-    margin: 2rem 0; /* Add vertical margin */
-    gap: 5rem; /* Space between the image and text */
+   position: relative;
 }
 
 .about-container {
-    display: flex; /* Make it a flex container */
-}
-
-.section__pic-container {
-    height: 400px; /* Set the height for consistency */
-    width: 400px; /* Set the width for consistency */
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container,
+.about-details-container{
     display: flex;
-    flex-direction: column; /* Stack the education and experience info vertically */
-    justify-content: center; /* Center the text vertically */
 }
 
-/* Titles and Paragraphs */
-.title {
-    font-size: 3rem; /* Ensure this remains centered */
-    text-align: center; /* Center text */
+.about-pic {
+    border-radius: 2rem;
 }
 
-.section__text {
-    display: flex;
-    flex-direction: column; /* Ensure titles stack vertically */
-    align-items: center; /* Center align text */
-    text-align: center; /* Center align text */
-    margin-top: 2rem; /* Space from top */
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem
 }
 
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
@@ -407,4 +420,4 @@ footer {
 
 footer .nav-links li a {
     color: white;
-}
+} 
