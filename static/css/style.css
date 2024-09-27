@@ -245,9 +245,11 @@ section {
 }
 
 .arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+    position: fixed; /* Keep the arrows fixed on the screen */
+    right: 20px; /* Positioning from the right */
+    bottom: 20px; /* Positioning from the bottom */
+    z-index: 1000; /* Make sure arrows are on top */
+    cursor: pointer; /* Change cursor to indicate clickable */
 }
 
 .details-container {
@@ -419,13 +421,4 @@ footer {
 }
 
 footer .nav-links li a {
-    color: white;
-}
-
-/* RESPONSIVENESS */
-@media (max-width: 1024px) {
-    section {
-        margin: 0 2rem;
-        padding-bottom: 1rem;
-    }
-}
+    color: white
