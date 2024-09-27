@@ -388,5 +388,26 @@ article.ion {
 }
 
 /* FOOTER SECTION */
+
 footer {
-    display:
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text horizontally */
+    justify-content: center; /* Center vertically if needed */
+    padding: 20px 0;
+    background-color: #333; /* Example background */
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    width: 100%;
+}
+
+
+
+
+footer .nav-links li a {
+    color: white;
+}  still not do you think it has to do with this code
