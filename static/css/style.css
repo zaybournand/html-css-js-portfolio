@@ -220,6 +220,7 @@ section {
 /* ABOUT SECTION */
 #about {
     position: relative;
+      margin-top: 10rem;
 }
 
 .about-container {
