@@ -218,24 +218,26 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
-   position: relative;
+    position: relative;
 }
 
 .about-container {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    display: flex; /* Add this to make the container flex */
+    justify-content: center; /* Center the children */
 }
 
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    flex: 1; /* Allow it to grow and take space next to the image */
 }
 
 .about-container,
-.about-details-container{
+.about-details-container {
     display: flex;
 }
 
@@ -243,10 +245,10 @@ section {
     border-radius: 2rem;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem
+    bottom: 2.5rem;
 }
 
 .details-container {
@@ -254,21 +256,22 @@ section {
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
+    border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
 }
 
-.section-container{
+.section-container {
     gap: 4rem;
     height: 80%;
 }
 
-.section__pic-container{
+.section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
 }
+
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
@@ -283,7 +286,7 @@ section {
 
 .experience-detials-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the details container */
     flex-direction: column;
 }
 
@@ -293,8 +296,9 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: space-around;
+    justify-content: center; /* Center the articles */
 }
+
 
 article {
     display: flex;
