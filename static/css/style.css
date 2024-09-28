@@ -262,8 +262,9 @@ section {
 }
 
 .section-container {
-    gap: 4rem;
-    height: 80%;
+    display: flex; /* Enables flexbox layout */
+    align-items: flex-start; /* Aligns items at the start */
+    gap: 2rem; /* Space between picture and text */
 }
 
 .section__pic-container {
