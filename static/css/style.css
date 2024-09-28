@@ -219,23 +219,26 @@ section {
 /* ABOUT SECTION */
 #about {
     position: relative;
-    margin-top: 10rem;
+      margin-top: 10rem;
 }
 
 .about-container {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    display: flex; /* Keep this to make the container flex */
-    flex-direction: column; /* Change to column to stack items */
-    align-items: center; /* Center items horizontally */
+    display: flex; /* Add this to make the container flex */
+    justify-content: center; /* Center the children */
 }
 
 .about-details-container {
     justify-content: center;
     flex-direction: column;
     flex: 1; /* Allow it to grow and take space next to the image */
-    text-align: center; /* Center the text for better presentation */
+}
+
+.about-container,
+.about-details-container {
+    display: flex;
 }
 
 .about-pic {
@@ -255,6 +258,7 @@ section {
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
+    text-align: center;
 }
 
 .section-container {
@@ -266,16 +270,7 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
-}
-
-/* Additional styles for the about picture */
-.profile-pic {
-    display: block; /* Ensures the image takes its own line */
-    margin-top: 10px; /* Adds space between the text and image */
-    max-width: 100%; /* Makes it responsive */
-    height: auto; /* Keeps the aspect ratio */
-}
-
+} 
 
 /* EXPERIENCE SECTION */
 #experience {
