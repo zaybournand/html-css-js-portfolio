@@ -62,13 +62,13 @@ a:hover {
 
 #hamburger-nav {
     display: none; /* Consider media queries to show/hide for mobile */
-    padding-right: 20px;
+    
 }
 
 .hamburger-menu {
     position: relative;
     display: inline-block;
-    padding-right: 20px;
+  
 }
 
 .hamburger-icon {
