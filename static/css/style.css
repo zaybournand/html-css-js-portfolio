@@ -343,7 +343,7 @@ article.ion {
 }
 
 .project-card img {
-    width: 22%; /* Default size for images */
+    width: 20%; /* Default size for images */
     height: auto; /* Maintain aspect ratio */
     margin: 0 auto 1rem auto; /* Center image with margin at bottom */
     border-radius: 8px;
@@ -351,7 +351,7 @@ article.ion {
 
 /* Specific adjustment for the fourth project's image */
 .project-card:nth-child(4) img {
-    width: 10%; /* Smaller size for the fourth image */
+    width: 9.7%; /* Smaller size for the fourth image */
 }
 
 .project-title {
