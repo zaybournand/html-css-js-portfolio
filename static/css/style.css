@@ -174,9 +174,11 @@ section {
     text-align: center;
 }
 
+/* SOCIALS CONTAINER */
 #socials-container {
     display: flex;
     justify-content: center;
+    align-items: center; /* Aligns icons vertically */
     margin-top: 1rem;
     gap: 1rem;
 }
@@ -185,22 +187,39 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    width: 2rem; /* Ensure icons are square and not stretched */
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Slight grow effect on hover */
 }
 
 /* Buttons */
 .btn-container {
     display: flex;
     justify-content: center;
+    align-items: center; /* Ensures vertical alignment */
     margin-top: 1rem;
     gap: 1rem;
 }
 
 .btn {
     font-weight: 600;
-    padding: 1rem;
-    width: 8rem;
+    padding: 0.75rem 1.5rem; /* Standardized padding for a better look */
+    min-width: 8rem; /* Use min-width instead of width to prevent stretching */
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    text-decoration: none; /* Ensure no underline on button text */
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    background-color: #f0f0f0; /* Subtle hover effect */
 }
 
 .btn-color-1:hover,
