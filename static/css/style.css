@@ -9,6 +9,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    font-size: 16px; /* Set a standard, readable base font size */
 }
 
 html {
@@ -40,7 +41,7 @@ nav {
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* Adjusted nav link font size for better spacing */
 }
 
 .logo {
@@ -100,7 +101,7 @@ a:hover {
     display: block;
     padding: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: black;
     text-decoration: none;
 }
@@ -160,10 +161,11 @@ section {
 
 .section__text__p1 {
     text-align: center;
+    font-size: 1rem;
 }
 
 .section__text__p2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem; /* Adjusted from 1.75rem for better balance */
     margin-bottom: 1rem;
 }
 
@@ -284,7 +286,7 @@ section {
 .experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1.5rem; /* Adjusted font size */
     margin-bottom: 2rem;
 }
 
@@ -355,7 +357,7 @@ article.ion {
 .project-title {
     margin: 0.5rem 0;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* Adjusted font size */
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -370,7 +372,7 @@ article.ion {
     color: black;
     border-color: rgb(163, 163, 163);
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 0.8rem; /* Adjusted font size */
     border-radius: 2rem;
 }
 
@@ -410,7 +412,7 @@ article.ion {
 }
 
 .contact-info-container p {
-    font-size: larger;
+    font-size: 1rem; /* Adjusted font size */
 }
 
 .contact-icon {
