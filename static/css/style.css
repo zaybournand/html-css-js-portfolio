@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure consistent box sizing */
+    box-sizing: border-box;
 }
 
 body {
@@ -44,8 +44,8 @@ nav {
 }
 
 .logo {
-    font-size: 2rem; /* Adjust font size as needed */
-    padding-left: 50px; /* Add padding to move the name to the right */
+    font-size: 2rem;
+    padding-left: 50px;
 }
 
 a {
@@ -61,18 +61,16 @@ a:hover {
 }
 
 #hamburger-nav {
-    display: none; /* Consider media queries to show/hide for mobile */
-    
+    display: none;
 }
 
 .hamburger-menu {
     position: relative;
     display: inline-block;
-  
 }
 
 .hamburger-icon {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 24px;
@@ -112,7 +110,7 @@ a:hover {
 }
 
 .menu-links.open {
-    max-height: 300px; /* Adjust as needed */
+    max-height: 300px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -130,34 +128,31 @@ a:hover {
 /* Section */
 section {
     padding-top: 4vh;
-    height: 96vh;
     margin: 0 10rem;
     min-height: fit-content;
+    height: auto;
 }
 
 /* PROFILE SECTION */
 #profile {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     height: 80vh;
 }
 
 .section__pic-container {
     display: flex;
-    height: 400px; 
-    width: 400px; 
+    height: 400px;
+    width: 400px;
 }
 
 .section__text {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    text-align: center;  
-}
-
-.section_text_p {
-    font-weight: 600;
+    align-items: center;
+    text-align: center;
 }
 
 .section__text__p1 {
@@ -170,15 +165,13 @@ section {
 }
 
 .title {
-    font-size: 3rem; 
+    font-size: 3rem;
     text-align: center;
 }
 
-/* SOCIALS CONTAINER */
 #socials-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Aligns icons vertically */
     margin-top: 1rem;
     gap: 1rem;
 }
@@ -187,30 +180,26 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
-    width: 2rem; /* Ensure icons are square and not stretched */
-    transition: transform 0.3s ease-in-out;
-}
-
-.icon:hover {
-    transform: scale(1.1); /* Slight grow effect on hover */
+    width: 2rem;
 }
 
 /* Buttons */
 .btn-container {
     display: flex;
+    flex-direction: column; /* Stack buttons and icons vertically */
     justify-content: center;
-    align-items: center; /* Ensures vertical alignment */
+    align-items: center;
     margin-top: 1rem;
     gap: 1rem;
 }
 
 .btn {
     font-weight: 600;
-    padding: 0.75rem 1.5rem; /* Standardized padding for a better look */
-    min-width: 8rem; /* Use min-width instead of width to prevent stretching */
+    padding: 0.5rem 1rem; /* Smaller padding for a smaller button */
+    min-width: 8rem;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
-    text-decoration: none; /* Ensure no underline on button text */
+    text-decoration: none;
     text-align: center;
     color: black;
     background-color: transparent;
@@ -219,43 +208,32 @@ section {
 
 .btn-color-1:hover,
 .btn-color-2:hover {
-    background-color: #f0f0f0; /* Subtle hover effect */
+    background-color: #f0f0f0;
 }
 
-.btn-color-1:hover,
-.btn-color-2:hover {
-    cursor: pointer;
-}
-
-.btn-color-1 {
-    background: none;
-}
-
-.btn-color-2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border: rgb(255,255,255) 0.1rem solid;
-}
 /* ABOUT SECTION */
 #about {
     position: relative;
-      margin-top: 10rem;
+    margin-top: 10rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-container {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    display: flex; /* Add this to make the container flex */
-    justify-content: center; /* Center the children */
+    display: flex;
+    justify-content: center;
 }
 
 .about-details-container {
     justify-content: center;
     flex-direction: column;
-    flex: 1; /* Allow it to grow and take space next to the image */
+    flex: 1;
 }
 
 .about-container,
@@ -281,25 +259,31 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+    min-width: 250px; /* Ensures a minimum width for the containers */
 }
 
 .section-container {
-    display: flex; /* Enables flexbox layout */
-    align-items: flex-start; /* Aligns items at the start */
-    gap: 2rem; /* Space between picture and text */
-    margin-top: 10rem; /* Add space above the section */
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 5rem; /* Reduced margin */
 }
 
 .section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
-} 
+}
+
+.text-container p {
+    text-align: left; /* Aligns text left to remove gaps */
+}
 
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
-    margin-top: 20rem;
+    margin-top: 10rem;
+    padding-bottom: 5rem;
 }
 
 .experience-sub-title {
@@ -309,10 +293,17 @@ section {
     margin-bottom: 2rem;
 }
 
-.experience-detials-container {
+.experience-details-container {
     display: flex;
-    justify-content: center; /* Center the details container */
+    justify-content: center;
     flex-direction: column;
+}
+
+.about-containers {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .article-container {
@@ -321,12 +312,12 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: center; /* Center the articles */
+    justify-content: center;
 }
-
 
 article {
     display: flex;
+    align-items: center;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
@@ -339,6 +330,8 @@ article.ion {
 #projects {
     position: relative;
     padding: 2rem 0;
+    height: auto;
+    margin-top: 5rem;
 }
 
 .projects-container {
@@ -347,28 +340,28 @@ article.ion {
     flex-wrap: wrap;
     gap: 2rem;
     margin: 2rem auto;
-    max-width: 1200px; 
+    max-width: 1200px;
 }
 
 .project-card {
     background-color: #f4f4f4;
-    border-radius: 2rem; 
+    border-radius: 2rem;
     border: rgb(163, 163, 163) 0.1rem solid;
-    padding: 1.5rem; 
+    padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1 1 300px; 
+    flex: 1 1 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 400px; 
-    min-height: 400px; 
+    max-width: 400px;
+    min-height: 400px;
 }
 
 .project-card img {
-    width: 100%; 
-    height: 200px; 
+    width: 100%;
+    height: 200px;
     object-fit: contain;
     margin-bottom: 1rem;
     border-radius: 1rem;
@@ -380,12 +373,8 @@ article.ion {
     font-size: 1.5rem;
     flex-grow: 1;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-}
-
-.btn-container {
-    margin-top: auto; 
+    align-items: center;
+    justify-content: center;
 }
 
 .project-btn {
@@ -393,7 +382,7 @@ article.ion {
     border-color: rgb(163, 163, 163);
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    border-radius: 2rem; 
+    border-radius: 2rem;
 }
 
 .icon.arrow {
@@ -404,10 +393,6 @@ article.ion {
     cursor: pointer;
 }
 
-/* Optional: Adjust the last project card's margin at the bottom */
-.project-card:last-child {
-    margin-bottom: 1.5rem;
-}
 /* CONTACT */
 #contact {
     display: flex;
@@ -422,9 +407,10 @@ article.ion {
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background-color: rgb(250, 250, 250); /* Corrected property */
+    background-color: rgb(250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
+    gap: 2rem; /* Reduced gap between items */
 }
 
 .contact-info-container {
@@ -452,22 +438,19 @@ article.ion {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the text horizontally */
-    justify-content: center; /* Center vertically if needed */
+    align-items: center;
+    justify-content: center;
     padding: 20px 0;
-    background-color: #333; /* Example background */
+    background-color: #333;
     color: white;
 }
 
 .footer-container {
     display: flex;
-    justify-content: center; /* Center the navigation links */
+    justify-content: center;
     width: 100%;
 }
 
-
-
-
 footer .nav-links li a {
     color: white;
-} 
+}
