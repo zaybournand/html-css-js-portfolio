@@ -319,55 +319,62 @@ article.ion {
 /* PROJECTS SECTION */
 #projects {
     position: relative;
-    padding: 2rem 0; /* Add padding to the top and bottom */
+    padding: 2rem 0;
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
-    gap: 1.5rem; /* Space between the cards */
-    padding: 1rem; /* Padding around the container */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px; 
 }
 
 .project-card {
     background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 1rem; /* Padding inside the project card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the cards */
-    text-align: center; /* Center the text in the card */
+    border-radius: 2rem; 
+    border: rgb(163, 163, 163) 0.1rem solid;
+    padding: 1.5rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 300px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space the content evenly */
-    height: 300px; /* Fixed height for all cards */
-    max-width: 100%; /* Ensures cards take full width in the grid */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px; 
+    min-height: 400px; 
 }
 
 .project-card img {
-    width: 19%; /* Default size for images */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto 1rem auto; /* Center image with margin at bottom */
-    border-radius: 8px;
-}
-
-/* Specific adjustment for the fourth project's image */
-.project-card:nth-child(4) img {
-    width: 9%; /* Smaller size for the fourth image */
+    width: 100%; 
+    height: 200px; 
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
 }
 
 .project-title {
-    margin: 0.5rem 0; /* Adjust margin for title */
+    margin: 0.5rem 0;
     color: black;
-    font-size: 1rem; /* Consistent font size for all titles */
-    flex-grow: 1; /* Allow title to grow and push button to the bottom */
+    font-size: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.btn-container {
+    margin-top: auto; 
 }
 
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
-    padding: 0.3rem 0.8rem; /* Smaller padding for the button */
-    font-size: 0.8rem; /* Smaller font size for the button */
-    border-radius: 4px; /* Optional: Add border-radius for a smoother look */
-    align-self: center; /* Center the button horizontally */
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 2rem; 
 }
 
 .icon.arrow {
