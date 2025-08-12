@@ -41,7 +41,7 @@ nav {
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.25rem; /* Adjusted nav link font size for better spacing */
+    font-size: 1.25rem;
 }
 
 .logo {
@@ -129,17 +129,17 @@ a:hover {
 /* Section */
 section {
     padding-top: 4vh;
-    height: 96vh;
     margin: 0 10rem;
-    min-height: fit-content;
+    min-height: fit-content; /* Removed fixed height */
 }
 
 /* PROFILE SECTION */
 #profile {
     display: flex;
     justify-content: center;
+    align-items: center; /* Vertically centers the content */
     gap: 5rem;
-    height: 80vh;
+    height: 80vh; /* Retained height to center content on the page */
 }
 
 .section__pic-container {
@@ -165,7 +165,7 @@ section {
 }
 
 .section__text__p2 {
-    font-size: 1.5rem; /* Adjusted from 1.75rem for better balance */
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -219,10 +219,15 @@ section {
 .btn-color-2:hover {
     border: rgb(255,255,255) 0.1rem solid;
 }
+
 /* ABOUT SECTION */
 #about {
     position: relative;
     margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-container {
@@ -266,9 +271,9 @@ section {
 
 .section-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* Vertically centers items */
     gap: 2rem;
-    margin-top: 10rem;
+    margin-top: 5rem; /* Reduced margin */
 }
 
 .section__pic-container {
@@ -280,13 +285,14 @@ section {
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
-    margin-top: 20rem;
+    margin-top: 10rem; /* Reduced margin */
+    padding-bottom: 5rem;
 }
 
 .experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
-    font-size: 1.5rem; /* Adjusted font size */
+    font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
@@ -294,6 +300,13 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.about-containers {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .article-container {
@@ -319,6 +332,7 @@ article.ion {
 #projects {
     position: relative;
     padding: 2rem 0;
+    margin-top: 5rem; /* Reduced margin */
 }
 
 .projects-container {
@@ -357,7 +371,7 @@ article.ion {
 .project-title {
     margin: 0.5rem 0;
     color: black;
-    font-size: 1.25rem; /* Adjusted font size */
+    font-size: 1.25rem;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -372,7 +386,7 @@ article.ion {
     color: black;
     border-color: rgb(163, 163, 163);
     padding: 0.5rem 1rem;
-    font-size: 0.8rem; /* Adjusted font size */
+    font-size: 0.8rem;
     border-radius: 2rem;
 }
 
@@ -412,7 +426,7 @@ article.ion {
 }
 
 .contact-info-container p {
-    font-size: 1rem; /* Adjusted font size */
+    font-size: 1rem;
 }
 
 .contact-icon {
