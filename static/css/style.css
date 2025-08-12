@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensure consistent box sizing */
 }
 
 body {
@@ -44,8 +44,8 @@ nav {
 }
 
 .logo {
-    font-size: 2rem;
-    padding-left: 50px;
+    font-size: 2rem; /* Adjust font size as needed */
+    padding-left: 50px; /* Add padding to move the name to the right */
 }
 
 a {
@@ -61,16 +61,18 @@ a:hover {
 }
 
 #hamburger-nav {
-    display: none;
+    display: none; /* Consider media queries to show/hide for mobile */
+    
 }
 
 .hamburger-menu {
     position: relative;
     display: inline-block;
+  
 }
 
 .hamburger-icon {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: space-between;
     height: 24px;
@@ -110,7 +112,7 @@ a:hover {
 }
 
 .menu-links.open {
-    max-height: 300px;
+    max-height: 300px; /* Adjust as needed */
 }
 
 .hamburger-icon.open span:first-child {
@@ -128,8 +130,8 @@ a:hover {
 /* Section */
 section {
     padding-top: 4vh;
+    height: 96vh;
     margin: 0 10rem;
-    height: auto; /* Removed fixed height and let it adapt to content */
     min-height: fit-content;
 }
 
@@ -137,22 +139,21 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    align-items: center; /* Vertically centers content */
     gap: 5rem;
-    height: 80vh; /* Retained height to center on the page for a clean intro */
+    height: 80vh;
 }
 
 .section__pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 400px; 
+    width: 400px; 
 }
 
 .section__text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: center; 
+    text-align: center;  
 }
 
 .section_text_p {
@@ -169,7 +170,7 @@ section {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 3rem; 
     text-align: center;
 }
 
@@ -221,26 +222,21 @@ section {
 /* ABOUT SECTION */
 #about {
     position: relative;
-    margin-top: 10rem;
-    height: auto; /* Removed fixed height */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+      margin-top: 10rem;
 }
 
 .about-container {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+    display: flex; /* Add this to make the container flex */
+    justify-content: center; /* Center the children */
 }
 
 .about-details-container {
     justify-content: center;
     flex-direction: column;
-    flex: 1;
+    flex: 1; /* Allow it to grow and take space next to the image */
 }
 
 .about-container,
@@ -269,23 +265,22 @@ section {
 }
 
 .section-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    margin-top: 10rem;
+    display: flex; /* Enables flexbox layout */
+    align-items: flex-start; /* Aligns items at the start */
+    gap: 2rem; /* Space between picture and text */
+    margin-top: 10rem; /* Add space above the section */
 }
 
 .section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
-}
+} 
 
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
     margin-top: 20rem;
-    height: auto; /* Removed fixed height */
 }
 
 .experience-sub-title {
@@ -295,9 +290,9 @@ section {
     margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.experience-detials-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the details container */
     flex-direction: column;
 }
 
@@ -307,8 +302,9 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: center;
+    justify-content: center; /* Center the articles */
 }
+
 
 article {
     display: flex;
@@ -324,7 +320,6 @@ article.ion {
 #projects {
     position: relative;
     padding: 2rem 0;
-    height: auto; /* Removed fixed height */
 }
 
 .projects-container {
@@ -333,28 +328,28 @@ article.ion {
     flex-wrap: wrap;
     gap: 2rem;
     margin: 2rem auto;
-    max-width: 1200px;
+    max-width: 1200px; 
 }
 
 .project-card {
     background-color: #f4f4f4;
-    border-radius: 2rem;
+    border-radius: 2rem; 
     border: rgb(163, 163, 163) 0.1rem solid;
-    padding: 1.5rem;
+    padding: 1.5rem; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1 1 300px;
+    flex: 1 1 300px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 400px;
-    min-height: 400px;
+    max-width: 400px; 
+    min-height: 400px; 
 }
 
 .project-card img {
-    width: 100%;
-    height: 200px;
+    width: 100%; 
+    height: 200px; 
     object-fit: contain;
     margin-bottom: 1rem;
     border-radius: 1rem;
@@ -366,12 +361,12 @@ article.ion {
     font-size: 1.5rem;
     flex-grow: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
+    justify-content: center; 
 }
 
 .btn-container {
-    margin-top: auto;
+    margin-top: auto; 
 }
 
 .project-btn {
@@ -379,7 +374,7 @@ article.ion {
     border-color: rgb(163, 163, 163);
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    border-radius: 2rem;
+    border-radius: 2rem; 
 }
 
 .icon.arrow {
@@ -390,6 +385,10 @@ article.ion {
     cursor: pointer;
 }
 
+/* Optional: Adjust the last project card's margin at the bottom */
+.project-card:last-child {
+    margin-bottom: 1.5rem;
+}
 /* CONTACT */
 #contact {
     display: flex;
@@ -404,7 +403,7 @@ article.ion {
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(250, 250, 250); /* Corrected property */
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -434,19 +433,22 @@ article.ion {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Center the text horizontally */
+    justify-content: center; /* Center vertically if needed */
     padding: 20px 0;
-    background-color: #333;
+    background-color: #333; /* Example background */
     color: white;
 }
 
 .footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the navigation links */
     width: 100%;
 }
 
+
+
+
 footer .nav-links li a {
     color: white;
-}
+} 
