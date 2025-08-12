@@ -1,165 +1,178 @@
-/* =================== MEDIA QUERIES =================== */
-
-@media screen and (max-width: 1400px) {
+/* Large Screens */
+@media screen and (min-width: 1400px) {
     #profile {
-        height: 80vh;
+        height: 70vh; /* Adjust height for larger screens */
+        margin-bottom: 4rem; /* Reduce the bottom margin */
+        display: flex;
+        align-items: center; /* Align profile image to the center vertically */
+        justify-content: center; /* Center the profile container */
+    }
+    .about-container {
+        display: flex; /* Use flexbox to position items side by side */
+        align-items: center; /* Center items vertically */
+        justify-content: flex-start; /* Align items to the start */
+        margin-bottom: 4rem; /* Add spacing below */
+        max-width: 1200px; /* Limit max width */
+        width: 100%; /* Full width */
+    }
+    .about-container .section__pic-container {
+        margin-right: 2rem; /* Space between picture and text */
+    }
+    .experience-details-container {
+        flex-wrap: wrap;
+        justify-content: center; /* Center the experience section */
+        width: 100%; /* Full width */
+        max-width: 1200px; /* Limit max width */
+        margin: 0 auto; /* Center the container */
+        margin-bottom: 4rem; /* Add spacing below */
+    }
+}
+
+/* Medium Screens */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
         margin-bottom: 6rem;
     }
-
-    .about-containers {
-        flex-wrap: wrap;
+    .about-container {
+        display: flex; /* Flexbox for about section */
+        align-items: center; /* Center items vertically */
+        justify-content: flex-start; /* Align items to the start */
+        margin-bottom: 6rem; /* More space below */
+        max-width: 1200px; /* Limit max width */
+        width: 100%; /* Full width */
+    }
+    .about-container .section__pic-container {
+        margin-right: 2rem; /* Space between picture and text */
+    }
+    .experience-details-container {
+        margin: 0 auto; /* Center the experience section */
+        width: 100%; /* Full width */
+        max-width: 1200px; /* Ensure max width */
+        margin-bottom: 6rem; /* More space below */
     }
 }
 
+/* Small Screens */
 @media screen and (max-width: 1200px) {
     #desktop-nav {
-        display: none;
+        display: none; /* Hide desktop navigation */
     }
-
     #hamburger-nav {
-        display: flex;
+        display: flex; /* Show hamburger navigation */
     }
-
-    #experience,
-    #projects,
-    #contact {
-        margin: 0 1rem;
+    #experience {
+        margin-top: 4rem;
+        margin-bottom: 6rem; /* Ensure spacing below experience section */
     }
-
-    #profile {
-        height: initial;
-        margin-bottom: 4rem;
-        display: block; /* Change profile to a block layout for vertical stacking */
-    }
-
-    .section__pic-container {
-        width: 300px;
-        height: 300px;
-        margin: 0 auto 2rem; /* Center the image and add bottom margin */
-    }
-
-    .section__text {
-        text-align: center;
-    }
-
-    .about-details-container {
-        margin-top: 2rem;
-    }
-
-    .about-details-container,
-    .contact-info-upper-container,
     .experience-details-container {
-        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 6rem; /* Add more space below */
+        width: 100%; /* Ensure full width */
+        max-width: 100%; /* Full width */
     }
-
-    .projects-container {
-        grid-template-columns: 1fr; /* Stack projects vertically */
+    #profile,
+    .section-container {
+        display: block; /* Change display for smaller screens */
     }
-
-    .project-card {
-        max-width: 100%;
-        min-height: auto; /* Remove fixed height for better content flow */
+    .arrow {
+        display: none; /* Hide arrows on small screens */
     }
-
-    .project-card img {
-        height: 150px;
+    section,
+    .section-container {
+        height: fit-content; /* Fit content height */
+        margin-bottom: 6rem; /* Add more spacing between sections */
+    }
+    section {
+        margin: 0 1%; /* Set side margins */
+    }
+    .about-container {
+        display: flex; /* Use flexbox for about section */
+        flex-direction: column; /* Stack for small screens */
+        align-items: center; /* Center items */
+        margin-bottom: 0; /* Reset margin */
+    }
+    .section__pic-container {
+        width: 200px; /* Adjust picture size */
+        height: 200px;
+        margin: 0 auto 2rem; /* Center image with bottom margin */
+        border-radius: 50%; /* Make it circular */
+        object-fit: cover; /* Cover the container */
     }
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
+/* Extra Small Screens */
+@media screen and (max-width: 600px) {
+    #contact,
+    footer {
+        height: auto; /* Set height to auto */
+        padding: 1rem; /* Add padding */
     }
-
-    nav {
-        height: 10vh;
-        padding: 0 1rem;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-        padding-left: 1rem;
-    }
-
-    section {
-        margin: 0 0.5rem;
-        padding-top: 2vh;
-    }
-
     #profile {
-        gap: 1rem;
+        height: auto; /* Set height to auto for profile */
+        margin-bottom: 0; /* Reset bottom margin */
     }
-
-    .section__text__p1,
-    .section__text__p2 {
-        font-size: 1rem;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-
     .section__pic-container {
-        width: 200px;
-        height: 200px;
+        width: 150px; /* Adjust picture size for smaller screens */
+        height: 150px;
+        margin: 0 auto 1rem; /* Center image with bottom margin */
+        border-radius: 50%; /* Circular image */
+        object-fit: cover; /* Cover the container */
     }
-
-    .btn-container {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .btn {
-        width: 100%;
-        padding: 0.75rem;
-    }
-
-    /* Adjustments for the Contact Section */
-    #contact {
-        height: auto;
-    }
-    
-    .contact-info-upper-container {
-        flex-wrap: wrap; /* Allow items to wrap to the next line */
-        border: none;
-        background: none;
-        padding: 0;
-        margin: 1rem auto;
-    }
-
-    .contact-info-container {
-        margin: 0.5rem 0;
-    }
-
-    .contact-info-container p a {
-        font-size: small;
-    }
-
-    .experience-sub-title {
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-    }
-
-    .article-container {
-        gap: 1rem;
-    }
-
     article {
-        width: 100%;
-        justify-content: flex-start;
+        font-size: 1rem; /* Adjust font size */
+    }
+    footer nav {
+        height: auto; /* Set height to auto */
+        margin-bottom: 2rem; /* Margin below footer */
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap; /* Wrap contents */
+        justify-content: center; /* Center contents */
+        width: 100%; /* Full width */
+        max-width: 200px; /* Limit max width for smaller screens */
+        margin: 0 auto; /* Center margin */
+    }
+    #contact-info-container {
+        margin: 0 auto; /* Center container */
+        padding: 1rem; /* Add padding */
+    }
+    .contact-info-container {
+        display: flex; /* Flex display */
+        flex-direction: column; /* Stack items */
+        align-items: center; /* Center items */
+    }
+    .contact-info-container p {
+        font-size: 1rem; /* Adjust font size */
+        margin: 0.5rem 0; /* Set margin */
+        text-align: center; /* Center align text */
+    }
+    .nav-links {
+        flex-direction: column; /* Stack links */
+        gap: 0.5rem; /* Set gap between links */
+        text-align: center; /* Center text */
+    }
+    .section__text__p2,
+    .title {
+        font-size: 1rem; /* Adjust font size */
+    }
+    .text-container {
+        text-align: justify; /* Justify text */
+    }
+    .arrow {
+        display: none; /* Hide arrows */
     }
 
-    footer .nav-links {
-        flex-direction: column;
-        gap: 1rem;
-        font-size: 1rem;
+    /* Adjustments to black box and position of profile and "Get to know more about" */
+    #black-box {
+        height: 85vh; /* Make the black box longer */
     }
-
-    footer .nav-links li a {
-        padding: 5px;
+    #get-to-know {
+        margin-top: 4rem; /* Lower the "Get to know more about" section */
     }
-
-    p.copyright {
-        font-size: 0.8rem;
+    #profile {
+        margin-top: -1rem; /* Slightly raise the profile section */
     }
 }
