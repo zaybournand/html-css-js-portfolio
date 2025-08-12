@@ -169,24 +169,10 @@ section {
     text-align: center;
 }
 
-#socials-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
-}
-
-/* ICONS */
-.icon {
-    cursor: pointer;
-    height: 2rem;
-    width: 2rem;
-}
-
-/* Buttons */
+/* --- FIX: Resume Button & Social Icons --- */
 .btn-container {
     display: flex;
-    flex-direction: column; /* Stack buttons and icons vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
@@ -209,6 +195,20 @@ section {
 .btn-color-1:hover,
 .btn-color-2:hover {
     background-color: #f0f0f0;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -0.5rem; /* Moves icons closer to the button */
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
 }
 
 /* ABOUT SECTION */
@@ -259,14 +259,13 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    min-width: 250px; /* Ensures a minimum width for the containers */
 }
 
 .section-container {
     display: flex;
     align-items: flex-start;
     gap: 2rem;
-    margin-top: 5rem; /* Reduced margin */
+    margin-top: 5rem;
 }
 
 .section__pic-container {
@@ -275,11 +274,12 @@ section {
     margin: auto 0;
 }
 
+/* --- FIX: About Text Gaps --- */
 .text-container p {
-    text-align: left; /* Aligns text left to remove gaps */
+    text-align: left; /* Aligns text left to remove gaps caused by justify */
 }
 
-/* EXPERIENCE SECTION */
+/* --- FIX: Experience Containers --- */
 #experience {
     position: relative;
     margin-top: 10rem;
@@ -323,10 +323,7 @@ article {
     gap: 0.5rem;
 }
 
-article.ion {
-    cursor: default;
-}
-/* PROJECTS SECTION */
+/* --- FIX: Projects Containers --- */
 #projects {
     position: relative;
     padding: 2rem 0;
@@ -393,7 +390,7 @@ article.ion {
     cursor: pointer;
 }
 
-/* CONTACT */
+/* --- FIX: Contact Section Alignment --- */
 #contact {
     display: flex;
     justify-content: center;
@@ -404,13 +401,14 @@ article.ion {
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
+    align-items: center; /* Aligns icons and text vertically */
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     background-color: rgb(250, 250, 250);
     margin: 2rem auto;
-    padding: 0.5rem;
-    gap: 2rem; /* Reduced gap between items */
+    padding: 0.5rem 2rem; /* Adjusted padding to bring items closer */
+    gap: 1rem; /* Reduces space between items */
 }
 
 .contact-info-container {
