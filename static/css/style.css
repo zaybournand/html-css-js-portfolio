@@ -469,7 +469,7 @@ footer .nav-links a {
     height: auto;
     
     position: absolute;
-    bottom: 1rem; 
+    bottom: -4.5rem; 
     right: 5%;
     
     margin: 0;
@@ -480,5 +480,5 @@ footer .nav-links a {
 }
 
 .icon.arrow:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
 }
