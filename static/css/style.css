@@ -70,10 +70,11 @@ nav {
 /* Hamburger Menu (Mobile) */
 #hamburger-nav {
     display: none; 
+    position: relative; 
 }
 
 .hamburger-menu {
-    position: relative;
+    position: static; 
     display: inline-block;
 }
 
@@ -84,6 +85,8 @@ nav {
     height: 24px;
     width: 30px;
     cursor: pointer;
+    position: relative; 
+    z-index: 50; 
 }
 
 .hamburger-icon span {
@@ -97,25 +100,27 @@ nav {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: var(--bg-color);
-    width: fit-content;
+    left: 0;    
+    width: 100%; 
+    
+    background-color: white; 
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-    box-shadow: var(--shadow);
-    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
 }
 
 .menu-links a {
     display: block;
-    padding: 10px;
+    padding: 1.5rem;
     text-align: center;
     font-size: 1.5rem;
+    color: black; 
+    border-bottom: 1px solid #eee; 
 }
 
 .menu-links.open {
-    max-height: 300px;
-    padding: 10px;
+    max-height: 400px; 
 }
 
 .hamburger-icon.open span:first-child {
@@ -127,7 +132,6 @@ nav {
 .hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
 }
-
 /* ========================
    3. SECTIONS GENERAL
    ======================== */
@@ -430,6 +434,7 @@ article .icon {
 .contact-icon {
     cursor: default;
     height: 2rem;
+    width:  2.5rem;
 }
 
 /* ========================

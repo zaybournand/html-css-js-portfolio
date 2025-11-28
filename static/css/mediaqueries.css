@@ -1,178 +1,161 @@
 /* ==============================================
+   mediaqueries.css - COMPLETE FILE
+   ============================================== */
+
+/* ==============================================
    TABLETS & SMALL LAPTOPS (Max Width: 1200px)
    ============================================== */
    @media screen and (max-width: 1200px) {
-    /* --- NAVIGATION --- */
     #desktop-nav {
         display: none;
     }
-    
+
     #hamburger-nav {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white; 
+        height: 10vh;
+        width: 100%; 
+        padding: 0 2rem;
+        z-index: 1000;
+        position: relative;
+    }
+
+    .hamburger-menu {
+        display: inline-block !important;
+    }
+
+    .hamburger-icon {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px; 
+        height: 40px;
+        cursor: pointer;
+        z-index: 50;  
     }
 
-    /* --- PROFILE SECTION --- */
+    .hamburger-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+        display: block;
+    }
+
+    .hamburger-icon.open .hamburger-img {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger-icon span {
+        display: none;
+    }
+
+    .menu-links {
+        position: absolute;
+        top: 100%;
+        right: 0; 
+        left: 0; 
+        background-color: white;
+        width: auto; 
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1); 
+    }
+
+    .menu-links.open {
+        max-height: 400px;
+    }
+
+    .menu-links li {
+        list-style: none;
+        width: 100%; 
+    }
+
+    .menu-links a {
+        display: block; 
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid #eee;
+    }
+    
     #profile {
-        height: auto; 
-        margin-bottom: 4rem;
-        flex-direction: column; 
-        gap: 2rem;
+        height: auto;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        gap: 1rem;
     }
-
+    
     .section__pic-container {
-        width: 275px;
-        height: 275px;
+        width: 200px;
+        height: 200px;
         margin: 0 auto;
     }
-
-    /* --- EXPERIENCE SECTION --- */
-    #experience {
-        height: auto;
-    }
-
+    
+    .about-containers, 
     .experience-details-container {
-        margin-top: 2rem;
-    }
-
-    .about-containers,
-    .experience-details-container {
-        flex-direction: column; 
-        align-items: center;
+        flex-direction: column;
         gap: 2rem;
-    }
-
-    .details-container {
-        width: 100%;
-        max-width: 600px;
-    }
-
-    .article-container {
-        justify-content: center;
-    }
-
-    /* --- PROJECTS SECTION --- */
-    .projects-container {
-        gap: 2rem;
+        align-items: center;    
     }
     
-    .project-card {
-        width: 45%; 
+    .details-container {
+        width: 100%;
+        max-width: 500px;
     }
-}
+} 
 
 /* ==============================================
    MOBILE DEVICES (Max Width: 768px)
    ============================================== */
 @media screen and (max-width: 768px) {
-    /* --- GENERAL --- */
-    body {
-        font-size: 14px; 
-    }
-
-    section {
-        margin: 0 5%; 
-        padding-top: 2rem;
-    }
-
-    .title {
-        font-size: 2.5rem;
-    }
-
-    .arrow {
-        display: none;
-    }
-
-    /* --- PROFILE SECTION --- */
-    #profile {
-        gap: 1rem;
-    }
-
-    .section__pic-container {
-        width: 200px; 
-        height: 200px;
-    }
-
-    .section__text__p2 {
-        font-size: 1.25rem;
-    }
-
-    /* --- ABOUT SECTION --- */
-    .about-pic-wrapper {
-        max-width: 250px; 
-    }
-    
-    .section-container {
+    .projects-container {
+        display: flex;
         flex-direction: column; 
+        align-items: center;   
         gap: 2rem;
+        width: 100%;
     }
 
-    /* --- EXPERIENCE SECTION --- */
-    article {
-        width: 8rem; 
-        font-size: 0.9rem;
-    }
-    
-    /* --- PROJECTS SECTION --- */
     .project-card {
-        width: 100%; 
+        width: 90%;         
+        max-width: 400px;
+        margin: 0 auto;
+        height: auto;
     }
 
     .project-card img {
-        height: 180px;
-    }
-
-    /* --- CONTACT SECTION --- */
-    #contact {
-        height: auto;
-        padding-bottom: 3rem;
-    }
-
-    .contact-info-upper-container {
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1.5rem;
+        height: 200px;
         width: 100%;
+        object-fit: cover;
+    }
+    
+    #about {
+        margin-top: 2rem; 
     }
 
-    .contact-info-container {
-        width: 100%;
-        justify-content: center;
+    .section-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 2rem;
+        margin-top: 0; 
     }
-
-    .email-icon {
-        height: 1.5rem;
-    }
-
-    /* --- FOOTER --- */
-    footer {
-        height: auto;
-        padding: 2rem;
-    }
-
-    footer .nav-links {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-}
-
-/* ==============================================
-   TINY DEVICES (Max Width: 400px)
-   ============================================== */
-@media screen and (max-width: 400px) {
-    .nav-links {
-        font-size: 1rem;
+    
+    /* 3. GENERAL MOBILE TEXT SIZES */
+    body {
+        font-size: 14px;
     }
     
     .title {
         font-size: 2rem;
     }
-
-    .btn {
-        width: 100%; 
-        padding: 0.8rem;
-    }
     
-    .btn-container {
-        width: 100%;
+    .arrow {
+        display: none;
     }
 }
