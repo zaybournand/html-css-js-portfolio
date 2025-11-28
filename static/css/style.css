@@ -460,25 +460,25 @@ footer .nav-links a {
    ======================== */
 
 
-section {
+   section {
     position: relative;
 }
 
-
 .icon.arrow {
-    width: 60px;  
-    height: auto; 
+    width: 60px;
+    height: auto;
+    
     position: absolute;
-    bottom: 4rem; 
-    right: 5%;    
-
+    bottom: 1rem; 
+    right: 5%;
+    
     margin: 0;
-
+    
     z-index: 10;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .icon.arrow:hover {
-    transform: translateY(-10px); 
+    transform: translateY(-5px); 
 }
