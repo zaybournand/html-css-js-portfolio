@@ -1,305 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
 </head>
 <body>
-        <nav id="desktop-nav">
-        <div class="logo">Zayne Bournand</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-        <nav id="hamburger-nav">
-    <div class="logo">Zayne Bournand</div>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <img src="assets/menu.png" alt="Menu Icon" class="hamburger-img" />
+    <nav id="desktop-nav">
+        <div class="logo">Zayne Bournand</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Zayne Bournand</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <img src="assets/menu.png" alt="Menu Icon" class="hamburger-img" />
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile-pic.png" alt="Zayne Bournand profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Zayne Bournand</h1>
+            <p class="section__text__p2">Backend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assets/zayne resume.pdf')">
+                    Resume
+                </button>
+            </div>
+            <div id="socials-container">
+                <img
+                    src="assets/linkedin.png"
+                    alt="LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/zayne-bournand-44982a31b/'"
+                />
+                <img
+                    src="assets/github.png"
+                    alt="GitHub profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/zaybournand?tab=repositories'"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                            src="assets/experience.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>Backend Engineer<br />API & Cloud Services</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                            src="assets/education.png"
+                            alt="Education icon"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelor of Science in Computer Science<br />University of Florida Aug 2024-May 2028</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Junior Computer Science student at the University of Florida with a passion for developing scalable, high-performance software systems and backend architectures. Experienced in building reliable enterprise workflows, RESTful services, and modern full-stack web applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img
+            src="assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='#experience'"
+        />
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
         
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-    </div>
-</nav>
-    
-        <section id="profile">
-        <div class="section__pic-container">
-            <img src="assets/profile-pic.png" alt="Zayne Bournand profile picture" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Zayne Bournand</h1>
-            <p class="section__text__p2">Backend Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('assets/zayne resume.pdf')">
-                    Resume
-                </button>
-            </div>
-            <div id="socials-container">
-                <img
-                    src="assets/linkedin.png"
-                    alt="LinkedIn profile"
-                    class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/zayne-bournand-44982a31b/'"
-                />
-                <img
-                    src="assets/github.png"
-                    alt="GitHub profile"
-                    class="icon"
-                    onclick="location.href='https://github.com/zaybournand?tab=repositories'"
-                />
-            </div>
-        </div>
-    </section>
+        <div class="experience-details-container">
+            <!-- Work History Cards -->
+            <div class="about-containers" style="margin-bottom: 2rem;">
+                <div class="details-container work-experience-card">
+                    <div class="company-header">
+                        <img src="assets/ibm.png" alt="IBM logo" class="company-logo" />
+                        <div>
+                            <h2 class="experience-sub-title">IBM</h2>
+                            <p class="role-title">Customer Success Engineer Co-op</p>
+                            <p class="role-duration">August 2026 - Present | Brookhaven, GA</p>
+                        </div>
+                    </div>
+                </div>
 
-        <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">About</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img
-                    src="assets/about-me-picture.jpg"
-                    alt="About me picture"
-                    class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img
-                            src="assets/experience.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>2+ years<br />Full-Stack Developer</p>
-                    </div>
-                    <div class="details-container">
-                        <img
-                            src="assets/education.png"
-                            alt="Education icon"
-                            class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>Bachelor of Science in Computer Science<br />University of Florida Aug 2024-May 2028</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        Sophomore Computer Science student at the University of Florida with a passion for developing innovative and impactful software tools, with a focus on backend development. Eager to create solutions that enhance everyday experiences and contribute to meaningful projects.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img
-            src="assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow"
-            onclick="location.href='#experience'"
-        />
-    </section>
-
-        <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-        <div class="about-containers">
-            
-            <div class="details-container">
-                <h2 class="experience-sub-title">Frontend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div class="details-container work-experience-card">
+                    <div class="company-header">
+                        <img src="assets/consumers-energy.png" alt="Consumers Energy logo" class="company-logo" />
                         <div>
-                            <h3>React</h3>
-                            <p>Experienced</p>
+                            <h2 class="experience-sub-title">Consumers Energy</h2>
+                            <p class="role-title">Software Engineer Intern</p>
+                            <p class="role-duration">May 2026 – Aug 2026 | Jackson, MI</p>
                         </div>
-                    </article>
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>Next.js</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>TypeScript</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>Tailwind CSS</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>React Native</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>HTML / CSS</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
 
-            <div class="details-container">
-                <h2 class="experience-sub-title">Backend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>Python</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>Java</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>Spring Boot</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>Node.js</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>PostgreSQL</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                        <div>
-                            <h3>AWS</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
+            <!-- Skills Grid -->
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Next.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Tailwind CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React Native</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML / CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Java / Spring</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C# / .NET</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Docker / AWS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img
+            src="assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='#projects'"
+        />
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="assets/Learn2Code.png" alt="Learn2Code" class="project-img" />
+                <h2 class="experience-sub-title project-title">Learn2Code</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/CodeLearner'">
+                        GitHub
+                    </button>
                 </div>
             </div>
 
+            <div class="project-card">
+                <img src="assets/Brushup.png" alt="Brushup" class="project-img" />
+                <h2 class="experience-sub-title project-title">Brushup</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/BrushUp?tab=readme-ov-file'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/HealthConnect.png" alt="HealthConnect" class="project-img" />
+                <h2 class="experience-sub-title project-title">HealthConnect</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/HealthConnects.git'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/algoChess.png" alt="AlgoChess" class="project-img" />
+                <h2 class="experience-sub-title project-title">AlgoChess</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/AlgoChess'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/Gamemate.png" alt="GameMate" class="project-img" />
+                <h2 class="experience-sub-title project-title">GameMate</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/GameMate'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
-    <img
-        src="assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#projects'"
-    />
-</section>
 
-        <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="projects-container">
-                        <div class="project-card">
-                <img src="assets/Learn2Code.png" alt="Learn2Code" class="project-img" />
-                <h2 class="experience-sub-title project-title">Learn2Code</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/CodeLearner'">
-                        GitHub
-                    </button>
-                </div>
-            </div>
+        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+    </section>
 
-                        <div class="project-card">
-                <img src="assets/Brushup.png" alt="Brushup" class="project-img" />
-                <h2 class="experience-sub-title project-title">Brushup</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/BrushUp?tab=readme-ov-file'">
-                        GitHub
-                    </button>
-                </div>
-            </div>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="Email icon" class="icon contact-icon" />
+                <p><a href="mailto:zaybournand@gmail.com">zaybournand@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/zayne-bournand-44982a31b/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>  
 
-                        <div class="project-card">
-                <img src="assets/HealthConnect.png" alt="HealthConnect" class="project-img" />
-                <h2 class="experience-sub-title project-title">HealthConnect</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/HealthConnects.git'">
-                        GitHub
-                    </button>
-                </div>
-            </div>
-
-                        <div class="project-card">
-                <img src="assets/algoChess.png" alt="AlgoChess" class="project-img" />
-                <h2 class="experience-sub-title project-title">AlgoChess</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/AlgoChess'">
-                        GitHub
-                    </button>
-                </div>
-            </div>
-                        <div class="project-card">
-                    <img src="assets/Gamemate.png" alt="AlgoChess" class="project-img" />
-                    <h2 class="experience-sub-title project-title">GameMate</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/zaybournand/GameMate'">
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-        </div>
-
-
-                <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
-    </section>
-
-        <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="assets/email.png" alt="Email icon" class="icon contact-icon" />
-                <p><a href="mailto:zaybournand@gmail.com">zaybournand@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/zayne-bournand-44982a31b/">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>  
-
-        <footer>
+    <footer>
         <nav>
             <div class="footer-container">
                 <ul class="nav-links">
@@ -310,9 +328,9 @@
                 </ul>
             </div>
         </nav>
-        <p class="copyright">Copyright &#169; 2024 Zayne Bournand. All Rights Reserved.</p>
+        <p class="copyright">Copyright &#169; 2026 Zayne Bournand. All Rights Reserved.</p>
     </footer>
-    
-    <script src="js/script.js"></script>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
